@@ -11,6 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.4.4"
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/solid-js": "^1.1.0",
+    "astro": "^1.4.4",
+    "sass": "^1.55.0",
+    "solid-js": "^1.5.7"
   }
 }
