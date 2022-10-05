@@ -1,0 +1,14 @@
+---
+// import '../styles/global.scss';
+const {
+	title = 'Victor Auffret',
+	description = 'Mon site personnel',
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
