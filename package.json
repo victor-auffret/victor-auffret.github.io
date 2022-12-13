@@ -13,9 +13,9 @@
   "dependencies": {
     "@astrojs/mdx": "^0.11.4",
     "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/solid-js": "^1.1.0",
-    "astro": "^1.4.4",
+    "@astrojs/solid-js": "^1.2.1",
+    "astro": "^1.5.2",
     "sass": "^1.55.0",
-    "solid-js": "^1.5.7"
+    "solid-js": "^1.6.0"
   }
 }
