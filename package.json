@@ -1,0 +1,19 @@
+{
+  "name": "victor-auffret.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-auffret/victor-auffret.github.io.git"
+  },
+  "author": "victor-auffret",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victor-auffret/victor-auffret.github.io/issues"
+  },
+  "homepage": "https://github.com/victor-auffret/victor-auffret.github.io#readme"
+}
