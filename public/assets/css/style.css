@@ -1,4 +1,3 @@
-@charset 'UTF-8';
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 /*
 @import "./0_settings/index";
@@ -9,13 +8,11 @@
 @import "./5_components/index";
 @import "./6_utils/index";
 */
-
 @media (prefers-color-scheme: dark) {
   img,
   video {
     opacity: 0.8;
   }
-
   :where(img, video):hover {
     opacity: 1;
   }
@@ -25,6 +22,7 @@ h1 {
   color: red;
   background-color: burlywood;
 }
+
 /*
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -40,3 +38,4 @@ h1 {
   }
 }
 */
+/*# sourceMappingURL=style.css.map */

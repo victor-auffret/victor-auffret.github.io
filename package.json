@@ -1,27 +1,38 @@
 {
   "name": "victor-auffret.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "./src/scss/index.scss",
+  "description": "ohmyfood page OC 03",
   "type": "module",
   "engines": {
     "node": ">=16"
   },
   "scripts": {
-    "dev": "npm run css:watch && npm run html:watch",
+    "dev": "npm run watch",
+    "watch": "npm run css:watch && npm run html:watch",
+    "build": "npm run css:build && npm run html:build",
+    "clean": "npm run css:clean && npm run html:clean",
+    "rebuild": "npm run clean && npm run build",
     "html:watch": "astro dev",
     "html:build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
+    "html:clean": "rimraf docs/*",
+    "html:rebuild": "npm run html:clean && npm run html:build",
+    "html:restart": "npm run html:clean && npm run html:watch",
     "css:watch": "npm run build-css -- --watch",
     "css:build": "npm run build-css && npm run build-prefix && npm run build-cleancss",
-    "build-css": "node-sass --scss --output-style expanded --source-map true src/scss/index.scss public/css/style.css",
-    "build-prefix": "postcss --use autoprefixer --map false --output public/css/style.css public/css/style.css",
-    "build-cleancss": "cleancss -o public/css/style.min.css public/css/style.css",
-    "rebuild": "npm run clean && npm run css:build",
-    "restart": "npm run clean && npm run css:watch",
-    "clean": "rimraf public/css/* && rimraf .sass-cache/"
+    "css:clean": "rimraf public/assets/css/* && rimraf .sass-cache/",
+    "css:rebuild": "npm run css:clean && npm run css:build",
+    "css:restart": "npm run css:clean && npm run css:watch",
+    "build-css": "node-sass --scss --output-style expanded --source-map true src/scss/index.scss public/assets/css/style.css",
+    "build-prefix": "postcss --use autoprefixer --map false --output public/assets/css/style.css public/assets/css/style.css",
+    "build-cleancss": "cleancss -o public/assets/css/style.min.css public/assets/css/style.css",
+    "preview": "astro preview",
+    "astro": "astro",
+    "list-browser": "npx browserslist"
   },
+  "browserslist": [
+    "defaults",
+    "last 2 versions"
+  ],
   "dependencies": {
     "astro": "^1.6.15"
   },
