@@ -1,82 +1,57 @@
 ---
+import Page from '@layouts/Page.astro';
+import Card from '@components/Card.astro';
+import Pied from '@components/Pied.astro';
+import jsondata from '../data/resto.json';
+const menus = jsondata.restos
 ---
 
-<html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood@2x.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"/>
-		<title>Oh my Food</title>
-		<link rel="stylesheet" href="./assets/css/style.css"/>
-	</head>
-	<body>
-		<div class="app">
+<Page title="Oh my food!">
+	<div class="app">
 
-			<header class="app-header">
-				<h1>ohmyfood</h1>
-				<h4>Paris, Belleville</h4>
-				<article>
-					<h2>Réservez le menu qui vous convient</h2>
-					<p>
-						Découvez des restaurants d'exception, sélectionnés par nos soins.
-					</p>
-					<a class="btn btn-rounded btn-pink" href="#resto">Explorer nos restaurants</a>
-				</article>
-			</header>
+		<header class="app-header">
+			<h1>ohmyfood</h1>
+		</header>
 
-			<main>
+		<section class="app-infos">
+			<h4>Paris, Belleville</h4>
+			<article>
+				<h2>Réservez le menu qui vous convient</h2>
+				<p>
+					Découvez des restaurants d'exception, sélectionnés par nos soins.
+				</p>
+				<a class="btn btn-rounded btn-pink" href="#resto">Explorer nos restaurants</a>
+			</article>
+		</section>
 
-				<section>
-					<h2>Fonctionnement</h2>
-					<ol>
-						<li>Choisissez un restaurant</li>
-						<li>Composez votre menu</li>
-						<li>Dégustez au restaurant</li>
-					</ol>
-				</section>
+		<main>
 
-				<section>
-					<h2>Restaurant</h2>
+			<section>
+				<h2>Fonctionnement</h2>
+				<ol>
+					<li>Choisissez un restaurant</li>
+					<li>Composez votre menu</li>
+					<li>Dégustez au restaurant</li>
+				</ol>
+			</section>
 
-					<nav>
+			<section id="resto">
+				<h2>Restaurant</h2>
 
-						<div class="card-resto">
-							<header class="card-image"></header>
-							<footer class="card-footer">
-
-								<article class="card-description">
-									<h3>La palette du goût</h3>
-									<p>
-										Ménilmontant
-									</p>
-								</article>
-
-								<aside class="card-coeur"></aside>
-
-							</footer>
-						</div>
-
-					</nav>
-				</section>
-
-			</main>
-
-			<footer class="app-footer">
-				<h4>ohmyfood</h4>
 				<nav>
-					<ul>
-						<li>Proposer un restaurant</li>
-						<li>Devenir partenaire</li>
-						<li>Mentions légales</li>
-						<li>Contact</li>
-					</ul>
-				</nav>
-			</footer>
 
-		</div>
-	</body>
-</html>
+					{
+						menus.map(menu => {
+							return (<Card title={menu.title} place={menu.place} image={menu.image} nouveau={false}></Card>)
+						})
+					}
+					
+				</nav>
+			</section>
+
+		</main>
+
+		<Pied></Pied>
+
+	</div>
+</Page>

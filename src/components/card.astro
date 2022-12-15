@@ -1,14 +1,17 @@
 ---
+const { title, place, image, nouveau } = Astro.props;
 ---
 
 <div class="card-resto">
- <header class="card-image"></header>
+ <header class={ "card-image " + image }>
+  { nouveau && (<div>nouveau</div>) }
+ </header>
  <footer class="card-footer">
 
   <article class="card-description">
-   <h3>La palette du goût</h3>
+   <h3>{title}</h3>
    <p>
-    Ménilmontant
+    { place }
    </p>
   </article>
 

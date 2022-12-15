@@ -1,0 +1,216 @@
+{
+ "restos": [
+  {
+		"slug": "la-palette-du-gout",
+		"title": "La palette du goût",
+		"place": "Ménilmontant",
+		"image": "assiette1",
+		"nouveau": true,
+  "menu": {
+   "entrees": [
+    {
+     "nom": "Fricassée d'escargot Au piment d'Espelette ",
+     "prix": 25
+    },
+    {
+     "nom": "Foie gras de canard mi-cuit Et ses copeaux de truffe noire",
+     "prix": 35
+    },
+    {
+     "nom": "Œuf au plat Assaisonné à la truffe sur lit de caviar",
+     "prix": 20
+    }
+   ],
+   "plats": [
+    {
+     "nom": "Filet de boeuf aux herbes Accompagné de sa ribambelle de légumes",
+     "prix": 40
+    },
+    {
+     "nom": "Parmentier de queue de boeuf À la truffe noire sur sa purée de panais",
+     "prix": 35
+    },
+    {
+     "nom": "Filet de turbot Aux agrumes",
+     "prix": 44
+    }
+   ],
+   "desserts": [
+    {
+     "nom": "Paris-Brest Revisité",
+     "prix": 18
+    }, 
+    {
+     "nom": "Macaron au chocolat d'exception Et glace à la vanille de Madagascar",
+     "prix": 22
+    },
+    {
+     "nom": "Mousse au chocolat Au piment d'Espelette et à la truffe noire",
+     "prix": 23
+    },
+    {
+     "nom": "",
+     "prix": 0
+    }
+   ]
+  }
+  },
+  {
+   "slug": "la-note-enchantee",
+   "title": "La note enchantée",
+   "place": "Charonne",
+   "image": "assiette2",
+   "nouveau": true,
+   "menu": {
+    "entrees": [
+     {
+      "nom": "Ravioles de foie gras Accompagnés de leur crème à la truffe",
+      "prix": 25
+     },
+     {
+      "nom": "Caviar osciètre Sur blini à la farine de blé noir",
+      "prix": 35
+     },
+     {
+      "nom": "Homard et espuma de potiron Mariné aux zestes d'orange",
+      "prix": 20
+     },
+     {
+      "nom": "Foie gras de canard cuit entier Confiture de figue et pain toasté",
+      "prix": 35
+     }
+    ],
+    "plats": [
+     {
+      "nom": "Noix de coquilles Saint-Jacques Sur lit de purée de céleri-rave",
+      "prix": 40
+     },
+     {
+      "nom": "Langoustine poêlée Purée de patate douce",
+      "prix": 35
+     },
+     {
+      "nom": "Mijoté de queue de boeuf Et riz sauvage aux zestes de citron",
+      "prix": 44
+     }
+    ],
+    "desserts": [
+     {
+      "nom": "Macaron noisette et chocolat Glace au caramel brun et sel de Guérande",
+      "prix": 18
+     },
+     {
+      "nom": "Baba au rhum revisité Avec son coulis de citron",
+      "prix": 22
+     },
+     {
+      "nom": "Tarte au citron meringuée Déstructurée",
+      "prix": 23
+     }
+    ]
+   }
+  },
+  {
+   "slug": "a-la-francaise",
+   "title": "A la française",
+   "place": "Cité Rouge",
+   "image": "assiette3",
+   "nouveau": false,
+   "menu": {
+    "entrees": [
+     {
+      "nom": "Tartare de poulpe acidulé Aux zestes d'orange",
+      "prix": 25
+     },
+     {
+      "nom": "Velouté de légumes d'antan Carotte, panais, topinambour",
+      "prix": 35
+     },
+     {
+      "nom": "Soupe à l'oignon Revisitée",
+      "prix": 20
+     }
+    ],
+    "plats": [
+     {
+      "nom": "Coquilles Saint-Jacques Accompagnées d'une purée de panais",
+      "prix": 40
+     },
+     {
+      "nom": "Magret de canard Et parmentier de pommes de terre",
+      "prix": 35
+     },
+     {
+      "nom": "Pigeonneau d’Ille-et-Vilaine Sur son lit de gnocchis aux légumes",
+      "prix": 44
+     }
+    ],
+    "desserts": [
+     {
+      "nom": "Pétales de violettes glacés Et purée de noisettes",
+      "prix": 18
+     },
+     {
+      "nom": "Fondant au chocolat Revisité",
+      "prix": 22
+     },
+     {
+      "nom": "Millefeuille croustillant Myrtilles et pâte d’amande",
+      "prix": 23
+     }
+    ]
+   }
+  },
+  {
+   "slug": "la-delice-des-sens",
+   "title": "Le délice des sens",
+   "place": "Folie-Méricourt",
+   "image": "assiette4",
+   "nouveau": false,
+   "menu": {
+    "entrees": [
+     {
+      "nom": "Tartare de thon Assaisonné au yuzu",
+      "prix": 25
+     },
+     {
+      "nom": "Bouchée de homard croustillant Et sa farandole de petits légumes",
+      "prix": 35
+     },
+     {
+      "nom": "Velouté de cèpes Aux truffes",
+      "prix": 20
+     }
+    ],
+    "plats": [
+     {
+      "nom": "Poulet rôti aux herbes de Provence Et sa crème de truffe",
+      "prix": 40
+     },
+     {
+      "nom": "Langouste rôtie Et ses légumes de saison",
+      "prix": 35
+     },
+     {
+      "nom": "Côte de boeuf Angus Et sa purée de panais",
+      "prix": 44
+     }
+    ],
+    "desserts": [
+     {
+      "nom": "Farandole de desserts Du chef",
+      "prix": 18
+     },
+     {
+      "nom": "Crème brulée Revisitée",
+      "prix": 22
+     },
+     {
+      "nom": "Tiramisu À la noisette",
+      "prix": 23
+     }
+    ]
+   }
+  }
+ ]
+}

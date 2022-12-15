@@ -1,79 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset="utf-8">
-		<link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood@2x.svg">
+		<meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood@2x.svg">
 		<meta name="viewport" content="width=device-width">
 		<meta name="generator" content="Astro v1.6.15">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-		<title>Oh my Food</title>
+		<title>Oh my food!</title>
 		<link rel="stylesheet" href="./assets/css/style.css">
 	</head>
 	<body>
 		<div class="app">
 
-			<header class="app-header">
-				<h1>ohmyfood</h1>
-				<h4>Paris, Belleville</h4>
-				<article>
-					<h2>Réservez le menu qui vous convient</h2>
-					<p>
-						Découvez des restaurants d'exception, sélectionnés par nos soins.
-					</p>
-					<a class="btn btn-rounded btn-pink" href="#resto">Explorer nos restaurants</a>
-				</article>
-			</header>
+		<header class="app-header">
+			<h1>ohmyfood</h1>
+		</header>
 
-			<main>
+		<section class="app-infos">
+			<h4>Paris, Belleville</h4>
+			<article>
+				<h2>Réservez le menu qui vous convient</h2>
+				<p>
+					Découvez des restaurants d'exception, sélectionnés par nos soins.
+				</p>
+				<a class="btn btn-rounded btn-pink" href="#resto">Explorer nos restaurants</a>
+			</article>
+		</section>
 
-				<section>
-					<h2>Fonctionnement</h2>
-					<ol>
-						<li>Choisissez un restaurant</li>
-						<li>Composez votre menu</li>
-						<li>Dégustez au restaurant</li>
-					</ol>
-				</section>
+		<main>
 
-				<section>
-					<h2>Restaurant</h2>
+			<section>
+				<h2>Fonctionnement</h2>
+				<ol>
+					<li>Choisissez un restaurant</li>
+					<li>Composez votre menu</li>
+					<li>Dégustez au restaurant</li>
+				</ol>
+			</section>
 
-					<nav>
+			<section id="resto">
+				<h2>Restaurant</h2>
 
-						<div class="card-resto">
-							<header class="card-image"></header>
-							<footer class="card-footer">
-
-								<article class="card-description">
-									<h3>La palette du goût</h3>
-									<p>
-										Ménilmontant
-									</p>
-								</article>
-
-								<aside class="card-coeur"></aside>
-
-							</footer>
-						</div>
-
-					</nav>
-				</section>
-
-			</main>
-
-			<footer class="app-footer">
-				<h4>ohmyfood</h4>
 				<nav>
-					<ul>
-						<li>Proposer un restaurant</li>
-						<li>Devenir partenaire</li>
-						<li>Mentions légales</li>
-						<li>Contact</li>
-					</ul>
-				</nav>
-			</footer>
 
-		</div>
+					<div class="card-resto">
+ <header class="card-image assiette1">
+  
+ </header>
+ <footer class="card-footer">
+
+  <article class="card-description">
+   <h3>La palette du goût</h3>
+   <p>
+    Ménilmontant
+   </p>
+  </article>
+
+  <aside class="card-coeur"></aside>
+
+ </footer>
+</div><div class="card-resto">
+ <header class="card-image assiette2">
+  
+ </header>
+ <footer class="card-footer">
+
+  <article class="card-description">
+   <h3>La note enchantée</h3>
+   <p>
+    Charonne
+   </p>
+  </article>
+
+  <aside class="card-coeur"></aside>
+
+ </footer>
+</div><div class="card-resto">
+ <header class="card-image assiette3">
+  
+ </header>
+ <footer class="card-footer">
+
+  <article class="card-description">
+   <h3>A la française</h3>
+   <p>
+    Cité Rouge
+   </p>
+  </article>
+
+  <aside class="card-coeur"></aside>
+
+ </footer>
+</div><div class="card-resto">
+ <header class="card-image assiette4">
+  
+ </header>
+ <footer class="card-footer">
+
+  <article class="card-description">
+   <h3>Le délice des sens</h3>
+   <p>
+    Folie-Méricourt
+   </p>
+  </article>
+
+  <aside class="card-coeur"></aside>
+
+ </footer>
+</div>
+					
+				</nav>
+			</section>
+
+		</main>
+
+		<footer class="app-footer">
+ <h4>ohmyfood</h4>
+ <nav>
+  <ul>
+   <li>
+    <a href="#">Proposer un restaurant</a>
+   </li>
+   <li>
+    <a href="#">Devenir partenaire</a>
+   </li>
+   <li>
+    <a href="#">Mentions légales</a>
+   </li>
+   <li>
+    <a href="mailto:ohmyfood@example.com">Contact</a>
+   </li>
+  </ul>
+ </nav>
+</footer>
+
+	</div>
 	</body></html>
