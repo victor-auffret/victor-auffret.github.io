@@ -1,0 +1,18 @@
+---
+const { nom, infos, prix } = Astro.props
+---
+
+<div class="menu-card">
+ <article>
+  <h3>{nom}</h3>
+  <p>{infos}</p>
+ </article>
+ <aside class="prix">
+  {prix} €
+ </aside>
+ <div class="checkbox">
+  <div class="cercle">
+   <span class="icon">v</span>
+  </div>
+ </div>
+</div>

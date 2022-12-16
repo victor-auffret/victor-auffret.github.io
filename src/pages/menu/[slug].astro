@@ -1,0 +1,56 @@
+---
+import Page from '@layouts/Page.astro';
+import NavBar from '@components/NavBar/index.astro';
+import MenuSection from '@components/MenuSection/index.astro';
+import Pied from '@components/Pied/index.astro';
+import jsondata from '../../data/resto.json';
+import './menu.scss';
+
+export async function getStaticPaths() {
+ return jsondata.restos.map((resto) => {
+  const nom = resto.title
+  const slug = resto.slug
+  const menu = resto.menu
+  return {
+   params: { slug },
+   props: { nom, menu }
+  }
+ })
+}
+
+const { nom, menu } = Astro.props;
+---
+
+
+<Page title="menus">
+
+  <NavBar isMenu={true} ></NavBar>
+  
+  <main>
+    <header class="menu-image"></header>
+    
+    <article class="menu-carte">
+
+      <header class="menu-nom">
+        <h2>{ nom }</h2>
+        <div class="coeur"></div>
+      </header>
+
+      {
+        Object.keys(menu).map((index) => {
+          const liste = menu[index];
+          return (<MenuSection type={index} liste={liste} />)
+        })
+      }
+      
+      <footer class="menu-commander">
+        <a class="btn btn-rouded btn-pink" href="#">Commancer</a>
+      </footer>
+
+    </article>
+    <!-- fin article menu-carte -->
+ </main>
+
+ <Pied></Pied>
+
+</Page>

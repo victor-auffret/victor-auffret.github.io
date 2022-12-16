@@ -8,23 +8,11 @@
   },
   "scripts": {
     "dev": "npm run watch",
-    "watch": "npm run css:watch && npm run html:watch",
-    "build": "npm run css:build && npm run html:build",
-    "clean": "npm run css:clean && npm run html:clean",
+    "watch": "astro dev",
+    "build": "astro build",
+    "clean": "rimraf docs/*",
     "rebuild": "npm run clean && npm run build",
-    "html:watch": "astro dev",
-    "html:build": "astro build",
-    "html:clean": "rimraf docs/*",
-    "html:rebuild": "npm run html:clean && npm run html:build",
-    "html:restart": "npm run html:clean && npm run html:watch",
-    "css:watch": "npm run build-css -- --watch",
-    "css:build": "npm run build-css && npm run build-prefix && npm run build-cleancss",
-    "css:clean": "rimraf public/assets/css/* && rimraf .sass-cache/",
-    "css:rebuild": "npm run css:clean && npm run css:build",
-    "css:restart": "npm run css:clean && npm run css:watch",
-    "build-css": "node-sass --scss --output-style expanded --source-map true src/scss/index.scss public/assets/css/style.css",
-    "build-prefix": "postcss --use autoprefixer --map false --output public/assets/css/style.css public/assets/css/style.css",
-    "build-cleancss": "cleancss -o public/assets/css/style.min.css public/assets/css/style.css",
+    "restart": "npm run clean && npm run watch",
     "preview": "astro preview",
     "astro": "astro",
     "list-browser": "npx browserslist"
@@ -41,7 +29,8 @@
     "clean-css-cli": "^5.6.1",
     "node-sass": "^8.0.0",
     "postcss-cli": "^10.1.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sass": "^1.56.2"
   },
   "repository": {
     "type": "git",

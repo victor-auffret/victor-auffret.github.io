@@ -1,0 +1,15 @@
+---
+import MenuCard from "../MenuCard/index.astro"
+
+const { type, liste } = Astro.props
+---
+
+<section class={`menu-${type}`} >
+ <h3>{ type }</h3>
+ { 
+  liste.map(
+   ({ nom, infos, prix }: any) => 
+   (<MenuCard titre={nom} infos={infos} prix={prix} />)
+  )
+ }
+</section>

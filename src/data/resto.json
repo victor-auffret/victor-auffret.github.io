@@ -9,7 +9,8 @@
   "menu": {
    "entrees": [
     {
-     "nom": "Fricassée d'escargot Au piment d'Espelette ",
+     "nom": "Fricassée d'escargot",
+     "infos": "Au piment d'Espelette",
      "prix": 25
     },
     {

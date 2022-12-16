@@ -1,17 +1,15 @@
 ---
 import Page from '@layouts/Page.astro';
-import Card from '@components/Card.astro';
-import Pied from '@components/Pied.astro';
+import NavBar from '@components/NavBar/index.astro';
+import Card from '@components/CardResto/index.astro';
+import Pied from '@components/Pied/index.astro';
 import jsondata from '../data/resto.json';
 const menus = jsondata.restos
 ---
 
 <Page title="Oh my food!">
-	<div class="app">
 
-		<header class="app-header">
-			<h1>ohmyfood</h1>
-		</header>
+		<NavBar isMenu={false} ></NavBar>
 
 		<section class="app-infos">
 			<h4>Paris, Belleville</h4>
@@ -53,5 +51,4 @@ const menus = jsondata.restos
 
 		<Pied></Pied>
 
-	</div>
 </Page>
