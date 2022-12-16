@@ -1,7 +1,8 @@
 ---
-const { title, place, image, nouveau } = Astro.props;
+const { slug, title, place, image, nouveau } = Astro.props;
 ---
 
+<a href={`/menu/${slug}`}>
 <div class="card-resto">
  <header class={ "card-image " + image }>
   { nouveau && (<div>nouveau</div>) }
@@ -19,3 +20,4 @@ const { title, place, image, nouveau } = Astro.props;
 
  </footer>
 </div>
+</a>

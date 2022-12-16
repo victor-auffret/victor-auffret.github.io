@@ -40,7 +40,7 @@ const menus = jsondata.restos
 
 					{
 						menus.map(menu => {
-							return (<Card title={menu.title} place={menu.place} image={menu.image} nouveau={false}></Card>)
+							return (<Card slug={menu.slug} title={menu.title} place={menu.place} image={menu.image} nouveau={false}></Card>)
 						})
 					}
 					
