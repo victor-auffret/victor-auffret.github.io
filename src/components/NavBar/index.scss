@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 1.25rem;
-  height: 4rem; /* 64 px */
+  height: 5rem;
 }
 
 .center {
@@ -27,4 +27,18 @@
   aspect-ratio: 1 / 1;
 
   font-size: 2rem;
+}
+
+.big-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.logo {
+  max-height: 68px;
+  max-width: 392px;
+  width: 50vw;
+  aspect-ratio: 392 / 68;
 }

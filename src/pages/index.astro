@@ -1,6 +1,7 @@
 ---
 import Page from '@layouts/Page.astro';
 import NavBar from '@components/NavBar/index.astro';
+import AppInfos from '@components/AppInfos/index.astro';
 import Card from '@components/CardResto/index.astro';
 import Pied from '@components/Pied/index.astro';
 import jsondata from '../data/resto.json';
@@ -11,16 +12,7 @@ const menus = jsondata.restos
 
 		<NavBar isMenu={false} ></NavBar>
 
-		<section class="app-infos">
-			<h4>Paris, Belleville</h4>
-			<article>
-				<h2>Réservez le menu qui vous convient</h2>
-				<p>
-					Découvez des restaurants d'exception, sélectionnés par nos soins.
-				</p>
-				<a class="btn btn-rounded btn-pink" href="#resto">Explorer nos restaurants</a>
-			</article>
-		</section>
+		<AppInfos/>
 
 		<main>
 

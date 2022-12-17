@@ -10,6 +10,11 @@ const { isMenu } = Astro.props || false;
   </a>
   </div>) : null }
  <div class="center">
-  <h1>ohmyfood</h1>
+  <h1 class="big-title">
+   <picture>
+    <source media="(min-width:769px)" srcset="/assets/images/logo/ohmyfood@2x.svg" />
+    <img class="logo" src="/assets/images/logo/ohmyfood.png" alt="ohmyfood" />
+   </picture>
+  </h1>
  </div>
 </header>
