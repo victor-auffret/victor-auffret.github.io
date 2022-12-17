@@ -38,7 +38,7 @@
   flex-direction: column;
   height: 300px;
   padding: 2.5rem;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--light-gris);
   font-size: 1.25rem;
 }
 
@@ -60,7 +60,7 @@
 
 .btn {
   display: inline-block;
-  border: solid 1px transparent;
+  border: solid 0px transparent;
   padding: 1rem 1.5rem;
   margin: 1rem;
   width: fit-content;
@@ -73,5 +73,5 @@
 
 .btn-pink {
   color: #fff;
-  background: linear-gradient(rgb(236, 115, 218), rgb(163, 91, 220));
+  background: linear-gradient(var(--rose), var(--violet));
 }

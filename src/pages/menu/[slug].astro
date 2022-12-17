@@ -2,7 +2,7 @@
 import Page from '@layouts/Page.astro';
 import NavBar from '@components/NavBar/index.astro';
 import MenuSection from '@components/MenuSection/index.astro';
-import Pied from '@components/Pied/index.astro';
+import AppPied from '@components/AppPied/index.astro';
 import jsondata from '../../data/resto.json';
 import './menu.scss';
 
@@ -51,6 +51,6 @@ const { nom, menu } = Astro.props;
     <!-- fin article menu-carte -->
  </main>
 
- <Pied></Pied>
+ <AppPied/>
 
 </Page>

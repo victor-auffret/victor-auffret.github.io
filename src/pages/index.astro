@@ -2,10 +2,9 @@
 import Page from '@layouts/Page.astro';
 import NavBar from '@components/NavBar/index.astro';
 import AppInfos from '@components/AppInfos/index.astro';
-import Card from '@components/CardResto/index.astro';
-import Pied from '@components/Pied/index.astro';
-import jsondata from '../data/resto.json';
-const menus = jsondata.restos
+import AppFonctionnement from '@components/AppFonctionnement/index.astro'
+import AppResto from '@components/AppResto/index.astro'
+import AppPied from '@components/AppPied/index.astro';
 ---
 
 <Page title="Oh my food!">
@@ -16,31 +15,12 @@ const menus = jsondata.restos
 
 		<main>
 
-			<section>
-				<h2>Fonctionnement</h2>
-				<ol>
-					<li>Choisissez un restaurant</li>
-					<li>Composez votre menu</li>
-					<li>Dégustez au restaurant</li>
-				</ol>
-			</section>
+			<AppFonctionnement/>
 
-			<section id="resto">
-				<h2>Restaurant</h2>
-
-				<nav>
-
-					{
-						menus.map(menu => {
-							return (<Card slug={menu.slug} title={menu.title} place={menu.place} image={menu.image} nouveau={false}></Card>)
-						})
-					}
-					
-				</nav>
-			</section>
+			<AppResto />
 
 		</main>
 
-		<Pied></Pied>
+		<AppPied/>
 
 </Page>

@@ -1,0 +1,26 @@
+---
+import './index.scss'
+import Card from '@components/CardResto/index.astro';
+import jsondata from '../../data/resto.json';
+const menus = jsondata.restos
+---
+
+<section id="resto" class="app-resto">
+ <h2>Restaurant</h2>
+
+ <nav>
+
+  {
+   menus.map(menu => {
+    return (<Card 
+     slug={menu.slug} 
+     title={menu.title} 
+     place={menu.place} 
+     image={menu.image} 
+     nouveau={menu.nouveau} 
+    />)
+   })
+  }
+  
+ </nav>
+</section>
