@@ -9,7 +9,7 @@ const { type, liste } = Astro.props
  { 
   liste.map(
    ({ nom, infos, prix }: any) => 
-   (<MenuCard titre={nom} infos={infos} prix={prix} />)
+   (<MenuCard nom={nom} infos={infos} prix={prix} />)
   )
  }
 </section>
