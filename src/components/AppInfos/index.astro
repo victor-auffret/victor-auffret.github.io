@@ -1,5 +1,6 @@
 ---
 import './index.scss';
+import PinkButton from '@components/PinkButton/index.astro'
 ---
 
 <section class="app-infos">
@@ -19,8 +20,6 @@ import './index.scss';
   <p class="description-content">
    Découvez des restaurants d'exception, sélectionnés par nos soins.
   </p>
-  <p class="description-btn">
-   <a class="btn btn-rounded btn-pink" href="#resto">Explorer nos restaurants</a>
-  </p>
+  <PinkButton url={"#resto"}>Explorer nos restaurants</PinkButton>
  </article>
 </section>

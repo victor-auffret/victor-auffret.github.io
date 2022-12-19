@@ -1,0 +1,26 @@
+.description-btn {
+  padding-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  width: 50%;
+  height: 60px;
+
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+
+  border: solid 0px transparent;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+}
+
+.btn-rounded {
+  border-radius: 2rem;
+}
+
+.btn-pink {
+  color: #fff;
+  background: linear-gradient(var(--rose), var(--violet));
+}

@@ -1,0 +1,10 @@
+---
+import './index.scss';
+const { url } = Astro.props;
+---
+
+<p class="description-btn">
+ <a class="btn btn-rounded btn-pink" href={url}>
+  <slot />
+ </a>
+</p>

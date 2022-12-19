@@ -2,6 +2,7 @@
 import Page from '@layouts/Page.astro';
 import NavBar from '@components/NavBar/index.astro';
 import MenuSection from '@components/MenuSection/index.astro';
+import PinkButton from '@components/PinkButton/index.astro'
 import AppPied from '@components/AppPied/index.astro';
 import jsondata from '../../data/resto.json';
 import './menu.scss';
@@ -44,7 +45,7 @@ const { nom, menu } = Astro.props;
       }
       
       <footer class="menu-commander">
-        <a class="btn btn-rouded btn-pink" href="#">Commancer</a>
+        <PinkButton url={"#"}>Commander</PinkButton>
       </footer>
 
     </article>
