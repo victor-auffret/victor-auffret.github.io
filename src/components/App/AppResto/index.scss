@@ -1,0 +1,15 @@
+.app-resto {
+  background-color: var(--light-gris);
+}
+
+.app-resto-title {
+  padding-left: 3rem;
+  padding-top: 6rem;
+}
+
+.app-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 2.5rem;
+}

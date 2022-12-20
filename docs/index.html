@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr" class="astro-XGBIIXSC">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood@2x.svg">
 		<meta name="viewport" content="width=device-width">
-		<meta name="generator" content="Astro v1.7.1">
+		<meta name="generator" content="Astro v1.7.2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
 		<title>Oh my food!</title>
 		<script src="https://kit.fontawesome.com/710d67b01d.js" crossorigin="anonymous"></script>
-		<!-- <link rel="stylesheet" href="./assets/css/style.css"/> -->
-		
-	<link rel="stylesheet" href="/assets/index.4b85203b.css" />
-<link rel="stylesheet" href="/assets/index.bf59bae4.css" /></head>
-	<body class="astro-XGBIIXSC">
-		<div class="app astro-XGBIIXSC">
+	<link rel="stylesheet" href="/assets/index.08c5de42.css" />
+<link rel="stylesheet" href="/assets/index.225f075d.css" /></head>
+	<body>
+		<div class="app">
 			<header class="app-header">
  
  <div class="center">
@@ -55,15 +53,15 @@
  <h2 class="fonctionnement-title">Fonctionnement</h2>
  <div>
   <ol class="fonctionnement-list">
-   <li>
+   <li class="fonctionnement-item">
     <i class="fa fa-mobile" aria-hidden="true"></i>
     <span>Choisissez un restaurant</span>
    </li>
-   <li>
+   <li class="fonctionnement-item">
     <i class="fa-solid fa-list"></i>
     <span>Composez votre menu</span>
    </li>
-   <li>
+   <li class="fonctionnement-item">
     <i class="fa-sharp fa-solid fa-store"></i>
     <span>Dégustez au restaurant</span>
    </li>
@@ -72,82 +70,102 @@
 </section>
 
 			<section id="resto" class="app-resto">
- <h2>Restaurant</h2>
+ <h2 class="app-resto-title">Restaurant</h2>
 
- <nav>
+ <nav class="app-card-container">
 
   <a href="/menu/la-palette-du-gout">
-<div class="card-resto">
- <header class="card-image assiette1">
-  <div>nouveau</div>
- </header>
- <footer class="card-footer">
+ <div class="app-card-resto">
+  
+  <div class="app-card-image card-image-la-palette-du-gout">
+   <div class="nouveau">Nouveau</div>
+  </div>
+  <div class="app-card-footer">
 
-  <article class="card-description">
-   <h3>La palette du goût</h3>
-   <p>
-    Ménilmontant
-   </p>
-  </article>
+   <article class="app-card-description">
+    <h3 class="app-card-nom-plat">La palette du goût</h3>
+    <h4 class="app-card-nom-lieu">Ménilmontant</h4>
+   </article>
 
-  <aside class="card-coeur"></aside>
+   <aside class="app-card-coeur">
+    <input class="coeur-checkbox" type="checkbox" name="coeur-la-palette-du-gout" id="coeur-la-palette-du-gout">
+    <label class="coeur-label" for="coeur-la-palette-du-gout">
+     <i class="coeur coeur-vide fa-regular fa-heart"></i>
+     <i class="coeur coeur-plein fa-solid fa-heart"></i>
+    </label>
+   </aside>
 
- </footer>
-</div>
+  </div>
+ </div>
 </a><a href="/menu/la-note-enchantee">
-<div class="card-resto">
- <header class="card-image assiette2">
-  <div>nouveau</div>
- </header>
- <footer class="card-footer">
+ <div class="app-card-resto">
+  
+  <div class="app-card-image card-image-la-note-enchantee">
+   <div class="nouveau">Nouveau</div>
+  </div>
+  <div class="app-card-footer">
 
-  <article class="card-description">
-   <h3>La note enchantée</h3>
-   <p>
-    Charonne
-   </p>
-  </article>
+   <article class="app-card-description">
+    <h3 class="app-card-nom-plat">La note enchantée</h3>
+    <h4 class="app-card-nom-lieu">Charonne</h4>
+   </article>
 
-  <aside class="card-coeur"></aside>
+   <aside class="app-card-coeur">
+    <input class="coeur-checkbox" type="checkbox" name="coeur-la-note-enchantee" id="coeur-la-note-enchantee">
+    <label class="coeur-label" for="coeur-la-note-enchantee">
+     <i class="coeur coeur-vide fa-regular fa-heart"></i>
+     <i class="coeur coeur-plein fa-solid fa-heart"></i>
+    </label>
+   </aside>
 
- </footer>
-</div>
+  </div>
+ </div>
 </a><a href="/menu/a-la-francaise">
-<div class="card-resto">
- <header class="card-image assiette3">
+ <div class="app-card-resto">
   
- </header>
- <footer class="card-footer">
+  <div class="app-card-image card-image-a-la-francaise">
+   
+  </div>
+  <div class="app-card-footer">
 
-  <article class="card-description">
-   <h3>A la française</h3>
-   <p>
-    Cité Rouge
-   </p>
-  </article>
+   <article class="app-card-description">
+    <h3 class="app-card-nom-plat">A la française</h3>
+    <h4 class="app-card-nom-lieu">Cité Rouge</h4>
+   </article>
 
-  <aside class="card-coeur"></aside>
+   <aside class="app-card-coeur">
+    <input class="coeur-checkbox" type="checkbox" name="coeur-a-la-francaise" id="coeur-a-la-francaise">
+    <label class="coeur-label" for="coeur-a-la-francaise">
+     <i class="coeur coeur-vide fa-regular fa-heart"></i>
+     <i class="coeur coeur-plein fa-solid fa-heart"></i>
+    </label>
+   </aside>
 
- </footer>
-</div>
-</a><a href="/menu/la-delice-des-sens">
-<div class="card-resto">
- <header class="card-image assiette4">
+  </div>
+ </div>
+</a><a href="/menu/le-delice-des-sens">
+ <div class="app-card-resto">
   
- </header>
- <footer class="card-footer">
+  <div class="app-card-image card-image-le-delice-des-sens">
+   
+  </div>
+  <div class="app-card-footer">
 
-  <article class="card-description">
-   <h3>Le délice des sens</h3>
-   <p>
-    Folie-Méricourt
-   </p>
-  </article>
+   <article class="app-card-description">
+    <h3 class="app-card-nom-plat">Le délice des sens</h3>
+    <h4 class="app-card-nom-lieu">Folie-Méricourt</h4>
+   </article>
 
-  <aside class="card-coeur"></aside>
+   <aside class="app-card-coeur">
+    <input class="coeur-checkbox" type="checkbox" name="coeur-le-delice-des-sens" id="coeur-le-delice-des-sens">
+    <label class="coeur-label" for="coeur-le-delice-des-sens">
+     <i class="coeur coeur-vide fa-regular fa-heart"></i>
+     <i class="coeur coeur-plein fa-solid fa-heart"></i>
+    </label>
+   </aside>
 
- </footer>
-</div>
+  </div>
+ </div>
 </a>
   
  </nav>
@@ -158,10 +176,16 @@
  <nav>
   <ul>
    <li>
-    <a href="#">Proposer un restaurant</a>
+    <a href="#">
+     <i class="fa-solid fa-utensils"></i>
+     Proposer un restaurant
+    </a>
    </li>
    <li>
-    <a href="#">Devenir partenaire</a>
+    <a href="#">
+     <i class="fa-solid fa-handshake-angle"></i>
+     Devenir partenaire
+    </a>
    </li>
    <li>
     <a href="#">Mentions légales</a>

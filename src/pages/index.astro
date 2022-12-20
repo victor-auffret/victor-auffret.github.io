@@ -1,15 +1,15 @@
 ---
-import Page from '@layouts/Page.astro';
-import NavBar from '@components/NavBar/index.astro';
-import AppInfos from '@components/AppInfos/index.astro';
-import AppFonctionnement from '@components/AppFonctionnement/index.astro'
-import AppResto from '@components/AppResto/index.astro'
-import AppPied from '@components/AppPied/index.astro';
+import Page from '@components/Shared/Page/index.astro';
+import CommonNavBar from '@components/Shared/CommonNavBar/index.astro';
+import AppInfos from '@components/App/AppInfos/index.astro';
+import AppFonctionnement from '@components/App/AppFonctionnement/index.astro'
+import AppResto from '@components/App/AppResto/index.astro'
+import CommonPied from '@components/Shared/CommonPied/index.astro';
 ---
 
 <Page title="Oh my food!">
 
-		<NavBar isMenu={false} ></NavBar>
+		<CommonNavBar isMenu={false} />
 
 		<AppInfos/>
 
@@ -21,6 +21,6 @@ import AppPied from '@components/AppPied/index.astro';
 
 		</main>
 
-		<AppPied/>
+		<CommonPied/>
 
 </Page>

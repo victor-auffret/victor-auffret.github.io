@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import "./reset.scss";
 
 :root {
@@ -19,15 +21,8 @@ body {
   font-family: var(--text-font);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--title-font);
-}
-
 .app {
   max-width: 768px;
   background-color: #fff;
+  font: var(--text-font);
 }

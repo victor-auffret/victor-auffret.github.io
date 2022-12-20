@@ -1,0 +1,29 @@
+---
+import './index.scss'
+const { slug, title, place, image, nouveau } = Astro.props;
+---
+
+<a href={`/menu/${slug}`}>
+ <div class="app-card-resto">
+  
+  <div class={ "app-card-image card-image-" + slug }>
+   { nouveau && (<div class="nouveau">Nouveau</div>) }
+  </div>
+  <div class="app-card-footer">
+
+   <article class="app-card-description">
+    <h3 class="app-card-nom-plat">{title}</h3>
+    <h4 class="app-card-nom-lieu">{ place }</h4>
+   </article>
+
+   <aside class="app-card-coeur">
+    <input class="coeur-checkbox" type="checkbox" name={`coeur-${slug}`} id={`coeur-${slug}`} />
+    <label class="coeur-label" for={`coeur-${slug}`}>
+     <i class="coeur coeur-vide fa-regular fa-heart"></i>
+     <i class="coeur coeur-plein fa-solid fa-heart"></i>
+    </label>
+   </aside>
+
+  </div>
+ </div>
+</a>

@@ -1,18 +1,18 @@
 ---
 import './index.scss'
-import Card from '@components/CardResto/index.astro';
-import jsondata from '../../data/resto.json';
+import AppCardResto from '@components/App/AppCardResto/index.astro';
+import jsondata from '../../../data/resto.json';
 const menus = jsondata.restos
 ---
 
 <section id="resto" class="app-resto">
- <h2>Restaurant</h2>
+ <h2 class="app-resto-title">Restaurant</h2>
 
- <nav>
+ <nav class="app-card-container">
 
   {
    menus.map(menu => {
-    return (<Card 
+    return (<AppCardResto 
      slug={menu.slug} 
      title={menu.title} 
      place={menu.place} 

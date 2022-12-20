@@ -1,9 +1,9 @@
 ---
-import Page from '@layouts/Page.astro';
-import NavBar from '@components/NavBar/index.astro';
-import MenuSection from '@components/MenuSection/index.astro';
-import PinkButton from '@components/PinkButton/index.astro'
-import AppPied from '@components/AppPied/index.astro';
+import Page from '@components/Shared/Page/index.astro';
+import CommonNavBar from '@components/Shared/CommonNavBar/index.astro';
+import MenuSection from '@components/Menus/MenuSection/index.astro';
+import PinkButton from '@components/Shared/PinkButton/index.astro'
+import CommonPied from '@components/Shared/CommonPied/index.astro';
 import jsondata from '../../data/resto.json';
 import './menu.scss';
 
@@ -25,7 +25,7 @@ const { nom, menu } = Astro.props;
 
 <Page title={`menu : ${nom}`}>
 
-  <NavBar isMenu={true} ></NavBar>
+  <CommonNavBar isMenu={true} />
   
   <main>
     <header class="menu-image"></header>
@@ -52,6 +52,6 @@ const { nom, menu } = Astro.props;
     <!-- fin article menu-carte -->
  </main>
 
- <AppPied/>
+ <CommonPied/>
 
 </Page>
