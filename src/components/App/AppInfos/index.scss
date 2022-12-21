@@ -35,9 +35,12 @@
 
 .app-infos-description {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
+
   height: 300px;
   padding: 2.5rem;
+
   background-color: var(--light-gris);
   font-size: 1.25rem;
 }

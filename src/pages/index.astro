@@ -1,5 +1,6 @@
 ---
 import Page from '@components/Shared/Page/index.astro';
+import LoadingSpinner from '@components/App/LoadingSpinner/index.astro';
 import CommonNavBar from '@components/Shared/CommonNavBar/index.astro';
 import AppInfos from '@components/App/AppInfos/index.astro';
 import AppFonctionnement from '@components/App/AppFonctionnement/index.astro'
@@ -8,6 +9,8 @@ import CommonPied from '@components/Shared/CommonPied/index.astro';
 ---
 
 <Page title="Oh my food!">
+
+		<LoadingSpinner/>
 
 		<CommonNavBar isMenu={false} />
 

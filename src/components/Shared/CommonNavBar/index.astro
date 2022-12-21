@@ -1,6 +1,7 @@
 ---
 import "./index.scss";
 const { isMenu } = Astro.props || false;
+const slash = isMenu ? "../" : "./"
 ---
 
 <header class="app-header">
@@ -11,10 +12,9 @@ const { isMenu } = Astro.props || false;
   </div>) : null }
  <div class="center">
   <h1 class="big-title">
-   <picture>
-    <source media="(min-width:769px)" srcset="/assets/images/logo/ohmyfood@2x.svg" />
-    <img class="logo" src="/assets/images/logo/ohmyfood.png" alt="ohmyfood" />
-   </picture>
+   <a href={`${slash}index.html`}>
+    <img class="logo" src={`${slash}assets/images/logo/ohmyfood.svg`} alt="ohmyfood" />
+   </a>
   </h1>
  </div>
 </header>
