@@ -139,7 +139,30 @@
 
 .menu-card-intitule {
   display: flex;
-  height: 100%;
-  flex-direction: column;
   justify-content: space-around;
+  flex-direction: column;
+
+  height: 100%;
+  width: fit-content;
+}
+
+.prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  width: 50px;
+  height: 100%;
+  /*
+  background-color: red;
+  */
+}
+
+.menu-card-intitule p {
+  /*
+  white-space: nowrap;
+  */
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

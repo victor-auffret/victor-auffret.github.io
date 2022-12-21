@@ -1,0 +1,38 @@
+---
+import MenuHeaderNom from '@components/Menus/MenuHeaderNom/index.astro';
+import MenuSection from '@components/Menus/MenuSection/index.astro';
+import PinkButton from '@components/Shared/PinkButton/index.astro';
+import './index.scss'
+const { nom, menu, slug } = Astro.props;
+---
+
+<main class="menu-main">
+
+ <header class={`menu-image menu-image-${slug}`}></header>
+ 
+ <div class="menu-carte">
+
+   <form action="#">
+
+     <MenuHeaderNom nom={nom} />
+
+     <div> 
+       {
+         Object.keys(menu).map((index) => {
+           const liste = menu[index];
+           return (<MenuSection type={index} liste={liste} />)
+         })
+       }
+     </div>
+
+     <footer class="menu-commander">
+       <PinkButton url={"#"}>
+        <input type="submit" value="Commander" />
+       </PinkButton>
+     </footer>
+     
+   </form>
+   
+ </div>
+ <!-- fin article menu-carte -->
+</main>

@@ -1,4 +1,5 @@
 ---
+import Coeur from '@components/Shared/Coeur/index.astro';
 import './index.scss'
 const { slug, title, place, image, nouveau } = Astro.props;
 ---
@@ -16,13 +17,7 @@ const { slug, title, place, image, nouveau } = Astro.props;
     <h4 class="app-card-nom-lieu">{ place }</h4>
    </article>
 
-   <aside class="app-card-coeur">
-    <input class="coeur-checkbox" type="checkbox" name={`coeur-${slug}`} id={`coeur-${slug}`} />
-    <label class="coeur-label" for={`coeur-${slug}`}>
-     <i class="coeur coeur-vide fa-regular fa-heart"></i>
-     <i class="coeur coeur-plein fa-solid fa-heart"></i>
-    </label>
-   </aside>
+   <Coeur slug={slug} />
 
   </div>
  </div>

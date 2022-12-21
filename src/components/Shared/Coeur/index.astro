@@ -1,0 +1,12 @@
+---
+import './index.scss'
+const { slug } = Astro.props
+---
+
+<div class="center">
+ <input class="coeur-checkbox" type="checkbox" name={`coeur-${slug}`} id={`coeur-${slug}`} />
+ <label class="coeur-label" for={`coeur-${slug}`}>
+  <i class="coeur coeur-vide fa-regular fa-heart"></i>
+  <i class="coeur coeur-plein fa-solid fa-heart"></i>
+ </label>
+</div>

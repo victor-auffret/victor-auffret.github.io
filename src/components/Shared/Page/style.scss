@@ -74,6 +74,10 @@ select {
   margin: 0;
 }
 
+input[type="submit"] {
+  all: unset;
+}
+
 img,
 video {
   height: auto;
@@ -119,4 +123,10 @@ body {
   max-width: 768px;
   background-color: #fff;
   font: var(--text-font);
+}
+
+.center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -80,40 +80,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*
-  background-color: red;
-  */
-}
-
-.coeur {
-  &-vide {
-    color: #000;
-  }
-
-  &-plein {
-    color: rgb(194, 102, 219);
-  }
-
-  &-checkbox {
-    display: none;
-  }
-
-  &-label {
-    font-size: 2.5rem;
-    cursor: pointer;
-  }
-
-  &-label :last-child {
-    display: none;
-  }
-}
-
-.coeur-label:hover :last-child,
-.coeur-checkbox:checked + .coeur-label :last-child {
-  display: block;
-}
-
-.coeur-label:hover :first-child,
-.coeur-checkbox:checked + .coeur-label :first-child {
-  display: none;
 }

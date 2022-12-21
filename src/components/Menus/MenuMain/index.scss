@@ -1,11 +1,22 @@
-.menu-main {
+.menu-carte {
   display: flex;
+  /*
   align-items: center;
+  */
   flex-direction: column;
-  background-color: white;
-  width: 768px;
-  height: 200vh;
+
+  width: 100%;
+  height: auto;
+
+  padding: 1.5rem;
+
+  background-color: #fff;
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
+
+/*** test ***/
 
 .menu-image {
   display: block;
@@ -53,27 +64,11 @@
   border-top-right-radius: 2rem;
 }
 
-.menu-nom {
-  display: flex;
-  justify-content: space-between;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.nom-resto {
-  font-weight: 900;
-  font-size: 3rem;
-}
-
-.coeur:hover {
-  color: var(--rose);
-}
-
 .menu-main {
   display: flex;
   flex-direction: column;
 }
 
 .menu-commander {
-  background-color: red;
+  padding-bottom: 2rem;
 }

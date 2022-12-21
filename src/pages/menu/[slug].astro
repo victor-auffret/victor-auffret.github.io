@@ -1,11 +1,9 @@
 ---
 import Page from '@components/Shared/Page/index.astro';
 import CommonNavBar from '@components/Shared/CommonNavBar/index.astro';
-import MenuSection from '@components/Menus/MenuSection/index.astro';
-import PinkButton from '@components/Shared/PinkButton/index.astro'
+import MenuMain from '@components/Menus/MenuMain/index.astro';
 import CommonPied from '@components/Shared/CommonPied/index.astro';
 import jsondata from '../../data/resto.json';
-import './menu.scss';
 
 export async function getStaticPaths() {
  return jsondata.restos.map((resto) => {
@@ -22,43 +20,12 @@ export async function getStaticPaths() {
 const { nom, menu, slug } = Astro.props;
 ---
 
-
 <Page title={`menu : ${nom}`}>
 
   <CommonNavBar isMenu={true} />
   
-  <main class="menu-main">
-
-    <header class={`menu-image menu-image-${slug}`}></header>
-    
-    <article class="menu-carte">
-
-      <form action="#">
-        <header class="menu-nom">
-          <h2 class="nom-resto">{ nom }</h2>
-          <div class="coeur">
-            <i class="coeur coeur-plein fa-solid fa-heart"></i>
-          </div>
-        </header>
-
-        <div> 
-          {
-            Object.keys(menu).map((index) => {
-              const liste = menu[index];
-              return (<MenuSection type={index} liste={liste} />)
-            })
-          }
-        </div>
-
-        <footer class="menu-commander">
-          <PinkButton url={"#"}>Commander</PinkButton>
-        </footer>
-      </form>
-      
-    </article>
-    <!-- fin article menu-carte -->
-  </main>
-
+  <MenuMain nom={nom} menu={menu} slug={slug} />
+  
   <CommonPied/>
 
 </Page>
