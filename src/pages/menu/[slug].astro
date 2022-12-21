@@ -14,12 +14,12 @@ export async function getStaticPaths() {
   const menu = resto.menu
   return {
    params: { slug },
-   props: { nom, menu }
+   props: { nom, menu, slug }
   }
  })
 }
 
-const { nom, menu } = Astro.props;
+const { nom, menu, slug } = Astro.props;
 ---
 
 
@@ -27,31 +27,38 @@ const { nom, menu } = Astro.props;
 
   <CommonNavBar isMenu={true} />
   
-  <main>
-    <header class="menu-image"></header>
+  <main class="menu-main">
+
+    <header class={`menu-image menu-image-${slug}`}></header>
     
     <article class="menu-carte">
 
-      <header class="menu-nom">
-        <h2>{ nom }</h2>
-        <div class="coeur"></div>
-      </header>
+      <form action="#">
+        <header class="menu-nom">
+          <h2 class="nom-resto">{ nom }</h2>
+          <div class="coeur">
+            <i class="coeur coeur-plein fa-solid fa-heart"></i>
+          </div>
+        </header>
 
-      {
-        Object.keys(menu).map((index) => {
-          const liste = menu[index];
-          return (<MenuSection type={index} liste={liste} />)
-        })
-      }
+        <div> 
+          {
+            Object.keys(menu).map((index) => {
+              const liste = menu[index];
+              return (<MenuSection type={index} liste={liste} />)
+            })
+          }
+        </div>
+
+        <footer class="menu-commander">
+          <PinkButton url={"#"}>Commander</PinkButton>
+        </footer>
+      </form>
       
-      <footer class="menu-commander">
-        <PinkButton url={"#"}>Commander</PinkButton>
-      </footer>
-
     </article>
     <!-- fin article menu-carte -->
- </main>
+  </main>
 
- <CommonPied/>
+  <CommonPied/>
 
 </Page>

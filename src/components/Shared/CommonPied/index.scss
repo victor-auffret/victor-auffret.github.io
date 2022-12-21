@@ -1,10 +1,17 @@
 .app-pied {
-  background-color: var(--dark-gris);
-  color: #fff;
+  display: inline-flex;
+  flex-direction: column;
+
+  min-height: 200px;
+  width: 100%;
+
   padding: 2rem;
   line-height: 2rem;
+
+  background-color: var(--dark-gris);
+  color: #fff;
 }
 
-.app-pied * {
+.link {
   color: #fff;
 }

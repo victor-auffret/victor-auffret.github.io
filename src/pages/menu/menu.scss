@@ -1,4 +1,4 @@
-main {
+.menu-main {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -8,4 +8,72 @@ main {
 }
 
 .menu-image {
+  display: block;
+  width: 100%;
+  height: 520px;
+  min-height: 300px;
+
+  margin-bottom: -2rem;
+
+  background-color: red;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-image-a-la-francaise {
+  background-image: url("../assets/images/restaurants/a-la-francaise.jpg");
+}
+
+.menu-image-la-note-enchantee {
+  background-image: url("../assets/images/restaurants/la-note-enchantee.jpg");
+}
+
+.menu-image-le-delice-des-sens {
+  background-image: url("../assets/images/restaurants/le-delice-des-sens.jpg");
+}
+
+.menu-image-la-palette-du-gout {
+  background-image: url("../assets/images/restaurants/la-palette-du-gout.jpg");
+}
+
+.menu-carte {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: auto;
+
+  padding: 1.5rem;
+
+  background-color: #fff;
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.menu-nom {
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.nom-resto {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.coeur:hover {
+  color: var(--rose);
+}
+
+.menu-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-commander {
+  background-color: red;
 }
