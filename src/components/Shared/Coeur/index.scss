@@ -31,3 +31,83 @@
 .coeur-checkbox:checked + .coeur-label :first-child {
   display: none;
 }
+
+/*
+test remplissable du coeur
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  --bg: linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, blue, blue);
+}
+
+.circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  color: grey;
+  transition-duration: 1s;
+  transition-property: background;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  
+  font-size: 2rem;
+  
+  background: var(--bg);
+
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  
+}
+
+.container:hover .circle {
+  animation-name: verre;
+}
+
+@keyframes verre {
+  0% {
+   --bg: linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, blue, blue);
+  }
+  10% {
+    --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, blue, yellow);
+  }
+  20% {
+     --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, yellow, yellow);
+  }
+  30% {
+    --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, blue, yellow, yellow, yellow);
+  }
+  40% {
+    --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, yellow, yellow, yellow, yellow);
+  }
+  50% {
+    --bg:  linear-gradient(blue, blue, blue, blue, blue, yellow, yellow, yellow, yellow, yellow);
+  }
+  60% {
+    --bg:  linear-gradient(blue, blue, blue, blue, yellow, yellow, yellow, yellow, yellow, yellow);
+  }
+  70% {
+    --bg:  linear-gradient(blue, blue, blue, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
+  }
+  80% {
+    --bg:  linear-gradient(blue, blue, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
+  }
+  90% {
+    --bg:  linear-gradient(blue, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
+  }
+  100% {
+    --bg:  linear-gradient(yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
+  }
+}
+*/

@@ -98,9 +98,6 @@
   max-height: 140px;
 
   z-index: 20;
-  /*
-  display: none;
-  */
 }
 
 .menu-card-content {
@@ -161,8 +158,9 @@
 
 .menu-card-intitule p {
   /*
+  width: 200px;
   white-space: nowrap;
   */
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
