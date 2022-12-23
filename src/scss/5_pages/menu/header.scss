@@ -1,0 +1,14 @@
+.menu-nom {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+
+  width: 100%;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.nom-resto {
+  font-weight: 900;
+  font-size: 2rem;
+}

@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npm run watch",
     "watch": "astro dev",
-    "build": "",
+    "build": "npm run html:build && npm run css:build",
     "html:build": "astro build",
     "clean": "rimraf docs/* && rimraf .sass-cache/",
     "rebuild": "npm run clean && npm run build",
@@ -17,9 +17,9 @@
     "astro": "astro",
     "css:dev": "npm run build-css -- --watch",
     "css:build": "npm run build-css && npm run build-prefix && npm run build-cleancss",
-    "build-css": "node-sass --scss --output-style expanded --source-map true src/scss/index.scss docs/assets/css/b-css.css",
-    "build-prefix": "postcss --use autoprefixer --map false --output docs/assets/css/b-css.css docs/assets/css/b-css.css",
-    "build-cleancss": "cleancss -o docs/assets/css/b-css.min.css docs/assets/css/b-css.css",
+    "build-css": "node-sass --scss --output-style expanded --source-map true src/scss/index.scss docs/assets/css/style.css",
+    "build-prefix": "postcss --use autoprefixer --map false --output docs/assets/css/style.css docs/assets/css/style.css",
+    "build-cleancss": "cleancss -o docs/assets/css/style.min.css docs/assets/css/style.css",
     "list-browser": "npx browserslist"
   },
   "browserslist": [

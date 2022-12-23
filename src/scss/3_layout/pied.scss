@@ -1,0 +1,23 @@
+.app-pied {
+  display: inline-flex;
+  flex-direction: column;
+
+  min-height: 200px;
+  width: 100%;
+
+  padding: 2rem;
+  line-height: 2rem;
+
+  background-color: var(--dark-gris);
+  color: #fff;
+}
+
+.link {
+  color: #fff;
+}
+
+.styled-title {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}

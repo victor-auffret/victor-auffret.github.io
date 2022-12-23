@@ -1,0 +1,166 @@
+.menu-card {
+  height: 140px;
+
+  margin-top: 1rem;
+  padding: 0;
+
+  border-radius: 1.5rem;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.5);
+
+  background-color: var(--vert);
+  position: relative;
+}
+
+.menu-card-front,
+.menu-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 1.5rem;
+}
+
+.menu-card-back {
+  width: 100%;
+  height: 100%;
+  max-height: 140px;
+  background-color: var(--vert);
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 140px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  animation-duration: 0.5s;
+  padding-right: 0;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.cercle {
+  transition-property: transform;
+  transition-timing-function: ease-in;
+  animation-delay: 0.1s;
+  animation-duration: 1s;
+
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+
+  padding: 0.5rem;
+
+  color: var(--vert);
+
+  aspect-ratio: 1 / 1;
+}
+
+@keyframes barel-roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.menu-card:hover .checkbox {
+  padding-right: 50px;
+}
+
+.menu-card:hover .cercle {
+  animation-name: barel-roll;
+}
+
+.menu-card-front {
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+
+  width: 100%;
+  height: 100%;
+  max-height: 140px;
+
+  z-index: 20;
+}
+
+.menu-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  width: 100%;
+
+  padding: 1rem;
+
+  background-color: #fff;
+  border-radius: 1.5rem;
+
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.rideau {
+  width: 0;
+  background-color: transparent;
+  height: 100%;
+
+  transition-duration: 0.5s;
+}
+
+.menu-card:hover .rideau {
+  width: 140px;
+  aspect-ratio: 1 / 1;
+}
+
+.menu-card:hover .menu-card-content {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.menu-card-intitule {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  height: 100%;
+  width: fit-content;
+}
+
+.prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  width: 50px;
+  height: 100%;
+  /*
+ background-color: red;
+ */
+}
+
+.menu-card-intitule p {
+  /*
+ width: 200px;
+ white-space: nowrap;
+ */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

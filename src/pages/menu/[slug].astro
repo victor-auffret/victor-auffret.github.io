@@ -20,9 +20,9 @@ export async function getStaticPaths() {
 const { nom, menu, slug } = Astro.props;
 ---
 
-<Page title={`menu : ${nom}`}>
+<Page title={`menu : ${nom}`} prefix="../../">
 
-  <CommonNavBar isMenu={true} />
+  <CommonNavBar isMenu={true} prefix="../../" />
   
   <MenuMain nom={nom} menu={menu} slug={slug} />
   

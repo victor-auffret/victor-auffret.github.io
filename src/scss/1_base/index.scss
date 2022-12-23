@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+
+@import "./reset.scss";
+
+$url-resto: (
+  a-la-francaise: "assets/images/restaurants/a-la-francaise.jpg",
+  la-note-enchantee: "assets/images/restaurants/la-note-enchantee.jpg",
+  la-palette-du-gout: "assets/images/restaurants/la-palette-du-gout.jpg",
+  le-delice-des-sens: "assets/images/restaurants/le-delice-des-sens.jpg",
+);
+
+:root {
+  --violet: #9356dc;
+  --rose: #ff79da;
+  --vert: #99e2d0;
+  --light-gris: #f7f7f7;
+  --dark-gris: #353535;
+
+  --title-font: "Shrikhand";
+  --text-font: "Roboto";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  font-family: var(--text-font);
+}
+
+.app {
+  /** TODO : a supprimer **/
+
+  max-width: 768px;
+  width: 768px;
+
+  background-color: #fff;
+  font: var(--text-font);
+}
+
+.center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

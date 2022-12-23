@@ -1,0 +1,94 @@
+.app-card-resto {
+  width: 100%;
+  aspect-ratio: 69 / 52;
+
+  border: solid 1px transparent;
+  border-radius: 1.25rem;
+}
+
+.app-card-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-height: 70%;
+  padding: 1.5rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.card-image-a-la-francaise {
+  @include bg-image(a-la-francaise, false);
+  /*
+  background-image: url("./assets/images/restaurants/a-la-francaise.jpg");
+  */
+}
+
+.card-image-la-note-enchantee {
+  @include bg-image(la-note-enchantee, false);
+  /*
+  background-image: url("./assets/images/restaurants/la-note-enchantee.jpg");
+  */
+}
+
+.card-image-le-delice-des-sens {
+  @include bg-image(le-delice-des-sens, false);
+  /*
+  background-image: url("./assets/images/restaurants/le-delice-des-sens.jpg");
+  */
+}
+
+.card-image-la-palette-du-gout {
+  @include bg-image(la-palette-du-gout, false);
+  /*
+  background-image: url("./assets/images/restaurants/la-palette-du-gout.jpg");
+  */
+}
+
+.nouveau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  text-align: center;
+  aspect-ratio: 16 / 6;
+  font-size: clamp(16px, 3.125vw, 1.5rem);
+  border-radius: 5%;
+}
+
+.app-card-footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #fff;
+  height: 30%;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  padding: 1rem;
+  color: #000;
+}
+
+.app-card-description {
+  font-size: 1.5rem;
+}
+
+.app-card-nom-plat {
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.app-card-nom-lieu {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.app-card-coeur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

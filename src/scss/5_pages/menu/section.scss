@@ -1,0 +1,46 @@
+.menu-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-type {
+  padding-bottom: 2rem;
+  font-variant: small-caps;
+}
+
+.menu-type::before {
+  position: relative;
+  display: block;
+  top: 2rem;
+  left: 0;
+  content: "";
+
+  height: 5px;
+  width: 70px;
+
+  background-color: var(--vert);
+}
+
+.menu-list-item {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin: 3rem 0;
+}
+
+@for $i from 1 through 5 {
+  .menu-list .menu-list-item:nth-child(#{$i}n) {
+    animation-delay: #{$i * 0.3}s;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin: 1rem 0;
+  }
+}

@@ -1,10 +1,12 @@
 ---
 import Coeur from '@components/Shared/Coeur/index.astro';
+/*
 import './index.scss'
+*/
 const { slug, title, place, image, nouveau } = Astro.props;
 ---
 
-<a href={`/menu/${slug}`}>
+<a href={`./menu/${slug}/index.html`}>
  <div class="app-card-resto">
   
   <div class={ "app-card-image card-image-" + slug }>

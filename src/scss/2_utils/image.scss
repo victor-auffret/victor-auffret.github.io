@@ -1,0 +1,7 @@
+@mixin bg-image($nom, $isMenu: true) {
+  @if $isMenu {
+    background-image: url("../../" + map-get($url-resto, $nom));
+  } @else {
+    background-image: url("../../" + map-get($url-resto, $nom));
+  }
+}

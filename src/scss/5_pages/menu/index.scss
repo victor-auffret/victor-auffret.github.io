@@ -1,0 +1,90 @@
+@import "./card.scss";
+@import "./header.scss";
+@import "./section.scss";
+
+.menu-carte {
+  display: flex;
+  /*
+align-items: center;
+*/
+  flex-direction: column;
+
+  width: 100%;
+  height: auto;
+
+  padding: 1.5rem;
+
+  background-color: #fff;
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+/*** test ***/
+
+.menu-image {
+  display: block;
+  width: 100%;
+  height: 520px;
+  min-height: 300px;
+
+  margin-bottom: -2rem;
+
+  background-color: red;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-image-a-la-francaise {
+  @include bg-image(a-la-francaise, true);
+  /*
+  background-image: url("../../assets/images/restaurants/a-la-francaise.jpg");
+  */
+}
+
+.menu-image-la-note-enchantee {
+  @include bg-image(la-note-enchantee, true);
+  /*
+  background-image: url("../../assets/images/restaurants/la-note-enchantee.jpg");
+  */
+}
+
+.menu-image-le-delice-des-sens {
+  @include bg-image(le-delice-des-sens, true);
+  /*
+  background-image: url("../../assets/images/restaurants/le-delice-des-sens.jpg");
+  */
+}
+
+.menu-image-la-palette-du-gout {
+  @include bg-image(la-palette-du-gout, true);
+  /*
+  background-image: url("../../assets/images/restaurants/la-palette-du-gout.jpg");
+  */
+}
+
+.menu-carte {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: auto;
+
+  padding: 1.5rem;
+
+  background-color: #fff;
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.menu-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-commander {
+  padding: 2rem 0;
+}

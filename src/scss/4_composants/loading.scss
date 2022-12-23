@@ -1,0 +1,49 @@
+.loading-page {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 120;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation-duration: 1.2s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  --spinner-color: var(--rose);
+  --visibility: hidden;
+}
+
+.loading-icon {
+  font-size: 5rem;
+  color: var(--spinner-color);
+  aspect-ratio: 1 / 1;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    --spinner-color: var(--vert);
+  }
+  99% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
