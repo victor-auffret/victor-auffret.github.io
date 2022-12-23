@@ -1,0 +1,7 @@
+vendors/ est un directory pour des feuilles de 
+style externes comme Bootstrap ou jQuery UI. 
+En gros, il s’utilise pour tout CSS venant de l’extérieur. 
+Utiliser des frameworks comme Bootstrap permet 
+d’accélérer le développement d’un site, car ils 
+contiennent des feuilles de style prédéfinies pour 
+des choses comme les formulaires ou des boutons.
