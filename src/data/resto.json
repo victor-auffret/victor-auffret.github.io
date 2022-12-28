@@ -4,7 +4,6 @@
 		"slug": "la-palette-du-gout",
 		"title": "La palette du goût",
 		"place": "Ménilmontant",
-		"image": "assiette1",
 		"nouveau": true,
   "menu": {
    "entrees": [
@@ -64,7 +63,6 @@
    "slug": "la-note-enchantee",
    "title": "La note enchantée",
    "place": "Charonne",
-   "image": "assiette2",
    "nouveau": true,
    "menu": {
     "entrees": [
@@ -129,7 +127,6 @@
    "slug": "a-la-francaise",
    "title": "A la française",
    "place": "Cité Rouge",
-   "image": "assiette3",
    "nouveau": false,
    "menu": {
     "entrees": [
@@ -189,7 +186,6 @@
    "slug": "le-delice-des-sens",
    "title": "Le délice des sens",
    "place": "Folie-Méricourt",
-   "image": "assiette4",
    "nouveau": false,
    "menu": {
     "entrees": [

@@ -38,31 +38,19 @@ align-items: center;
 }
 
 .menu-image-a-la-francaise {
-  @include bg-image(a-la-francaise, true);
-  /*
-  background-image: url("../../assets/images/restaurants/a-la-francaise.jpg");
-  */
+  @include bg-image(a-la-francaise);
 }
 
 .menu-image-la-note-enchantee {
-  @include bg-image(la-note-enchantee, true);
-  /*
-  background-image: url("../../assets/images/restaurants/la-note-enchantee.jpg");
-  */
+  @include bg-image(la-note-enchantee);
 }
 
 .menu-image-le-delice-des-sens {
-  @include bg-image(le-delice-des-sens, true);
-  /*
-  background-image: url("../../assets/images/restaurants/le-delice-des-sens.jpg");
-  */
+  @include bg-image(le-delice-des-sens);
 }
 
 .menu-image-la-palette-du-gout {
-  @include bg-image(la-palette-du-gout, true);
-  /*
-  background-image: url("../../assets/images/restaurants/la-palette-du-gout.jpg");
-  */
+  @include bg-image(la-palette-du-gout);
 }
 
 .menu-carte {

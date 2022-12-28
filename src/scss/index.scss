@@ -7,3 +7,23 @@
 @import "./5_pages/index";
 @import "./6_themes/index";
 @import "./7_vendors/index";
+
+@media screen and (min-width: 769px) {
+  /** page principale **/
+  .fonctionnement-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .app-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*
+  .menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  */
+}

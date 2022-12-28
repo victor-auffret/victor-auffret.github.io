@@ -6,6 +6,7 @@
   width: 100%;
 
   padding: 2rem;
+  padding-left: clamp(2rem, 4vw, 80px);
   line-height: 2rem;
 
   background-color: var(--dark-gris);

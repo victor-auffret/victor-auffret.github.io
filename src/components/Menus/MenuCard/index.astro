@@ -1,45 +1,48 @@
 ---
-/*
-import './index.scss'
-*/
 const { nom, infos, prix } = Astro.props
 ---
 
-<div class="menu-card">
+<!-- menu-card -->
+<label for={`menu-${nom}`}>
+ <div class="menu-card">
 
- <!-- menu-card-front -->
- <label for={`menu-${nom}`} class="menu-card-front">
-
-  <div class="menu-card-content">
-   <article class="menu-card-intitule">
-    <h3>{nom}</h3>
-    <p>{infos}</p>
-   </article>
-
-   <aside class="prix">
-    <data value={prix}>
-     {prix} €
-    </data>
-   </aside>
-  </div>
+  <input class="menu-hidden-checkbox" type="checkbox" name={`menu-${nom}`} id={`menu-${nom}`} />
   
-  <div class="rideau"></div>
-  
- </label>
- <!-- fin menu-card-front -->
+  <!-- menu-card-front -->
+  <div class="menu-card-front">
 
- <div class="menu-card-back">
+   <div class="menu-card-content">
 
-  <div class="checkbox">
-   <input type="checkbox" name={`menu-${nom}`} id={`menu-${nom}`}>
-   <div class="cercle">
-    <span class="icon">
-     <i class="fa-solid fa-check"></i>
-    </span>
+    <article class="menu-card-intitule">
+     <h3>{nom}</h3>
+     <p>{infos}</p>
+    </article>
+    
+    <aside class="prix">
+     <data value={prix}>{prix} €</data>
+    </aside>
+
    </div>
+
+   <div class="rideau"></div>
+
   </div>
+  <!-- fin menu-card-front -->
+  
+  <!-- menu-card-back -->
+  <div class="menu-card-back">
+   
+   <!-- menu-card-back-box -->
+   <div class="menu-card-back-box">
+    <div class="cercle">
+     <span class="icon"><i class="fa-solid fa-check"></i></span>
+    </div>
+   </div>
+   <!-- fin menu-card-back-box -->
+
+  </div>
+  <!-- fin menu-card-back -->
 
  </div>
-
-</div>
-
+ <!-- fin menu-card -->
+</label>

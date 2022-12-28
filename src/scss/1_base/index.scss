@@ -31,10 +31,9 @@ body {
 }
 
 .app {
-  /** TODO : a supprimer **/
-
-  max-width: 768px;
-  width: 768px;
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
 
   background-color: #fff;
   font: var(--text-font);

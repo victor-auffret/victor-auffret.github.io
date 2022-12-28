@@ -2,9 +2,9 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood@2x.svg">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood.svg">
 		<meta name="viewport" content="width=device-width">
-		<meta name="generator" content="Astro v1.7.2">
+		<meta name="generator" content="Astro v1.8.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
@@ -31,14 +31,14 @@
  </div>
 </header><section class="app-infos">
 
- <div class="app-infos-emplacement">
+ <header class="app-infos-emplacement">
   <span class="emplacement-icon">
    <i class="fa-solid fa-location-dot"></i>
   </span>
   <h4 class="emplacement-font-title">
    Paris, Belleville
   </h4>
- </div>
+ </header>
  
 
  <article class="app-infos-description">
@@ -83,15 +83,15 @@
 			<section id="resto" class="app-resto">
  <h2 class="app-resto-title">Restaurant</h2>
 
- <nav class="app-card-container">
-
-  <a href="./menu/la-palette-du-gout/index.html">
+ <form action="#" class="app-resto-form">
+  <nav class="app-card-container">
+   <a href="./menu/la-palette-du-gout/index.html">
  <div class="app-card-resto">
   
   <div class="app-card-image card-image-la-palette-du-gout">
    <div class="nouveau">Nouveau</div>
   </div>
-  <div class="app-card-footer">
+  <footer class="app-card-footer">
 
    <article class="app-card-description">
     <h3 class="app-card-nom-plat">La palette du goût</h3>
@@ -106,7 +106,7 @@
  </label>
 </div>
 
-  </div>
+  </footer>
  </div>
 </a><a href="./menu/la-note-enchantee/index.html">
  <div class="app-card-resto">
@@ -114,7 +114,7 @@
   <div class="app-card-image card-image-la-note-enchantee">
    <div class="nouveau">Nouveau</div>
   </div>
-  <div class="app-card-footer">
+  <footer class="app-card-footer">
 
    <article class="app-card-description">
     <h3 class="app-card-nom-plat">La note enchantée</h3>
@@ -129,7 +129,7 @@
  </label>
 </div>
 
-  </div>
+  </footer>
  </div>
 </a><a href="./menu/a-la-francaise/index.html">
  <div class="app-card-resto">
@@ -137,7 +137,7 @@
   <div class="app-card-image card-image-a-la-francaise">
    
   </div>
-  <div class="app-card-footer">
+  <footer class="app-card-footer">
 
    <article class="app-card-description">
     <h3 class="app-card-nom-plat">A la française</h3>
@@ -152,7 +152,7 @@
  </label>
 </div>
 
-  </div>
+  </footer>
  </div>
 </a><a href="./menu/le-delice-des-sens/index.html">
  <div class="app-card-resto">
@@ -160,7 +160,7 @@
   <div class="app-card-image card-image-le-delice-des-sens">
    
   </div>
-  <div class="app-card-footer">
+  <footer class="app-card-footer">
 
    <article class="app-card-description">
     <h3 class="app-card-nom-plat">Le délice des sens</h3>
@@ -175,11 +175,12 @@
  </label>
 </div>
 
-  </div>
+  </footer>
  </div>
 </a>
-  
- </nav>
+  </nav>
+ </form>
+ 
 </section>
 
 		</main><footer class="app-pied">

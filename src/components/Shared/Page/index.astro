@@ -1,7 +1,4 @@
 ---
-/*
-import "./style.scss";
-*/
 const { title, prefix } = Astro.props;
 ---
 
@@ -9,14 +6,14 @@ const { title, prefix } = Astro.props;
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood@2x.svg" />
+  <link rel="icon" type="image/svg+xml" href="./assets/images/logo/ohmyfood.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href={`${prefix}assets/css/style.css`} />
-		<title>{title ?? "Oh my food"}</title>
+		<title>{title ?? "Oh my food !"}</title>
 		<script src="https://kit.fontawesome.com/710d67b01d.js" crossorigin="anonymous"></script>
 	</head>
 	<body>

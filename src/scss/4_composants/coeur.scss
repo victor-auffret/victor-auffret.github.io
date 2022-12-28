@@ -1,11 +1,203 @@
+@keyframes verre {
+  0% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue
+    );
+  }
+  10% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      yellow
+    );
+  }
+  20% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      yellow,
+      yellow
+    );
+  }
+  30% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+  40% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      yellow,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+  50% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+  60% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+  70% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+  80% {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+  90% {
+    --bg: linear-gradient(
+      blue,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+  100% {
+    --bg: linear-gradient(
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow,
+      yellow
+    );
+  }
+}
+
 .coeur {
   margin: 0.3rem;
+
+  &-container {
+    --bg: linear-gradient(
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue,
+      blue
+    );
+
+    &:hover i {
+      animation-name: verre;
+    }
+  }
+
+  /*
   &-vide {
     color: #000;
   }
+  */
 
   &-plein {
     color: rgb(194, 102, 219);
+    background-color: blue;
+    background: var(--bg, blue);
+
+    transition-duration: 1s;
+    transition-property: background;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
 
   &-checkbox {
@@ -16,12 +208,13 @@
     font-size: 2.5rem;
     cursor: pointer;
   }
-
+  /*
   &-label :last-child {
     display: none;
   }
+  */
 }
-
+/*
 .coeur-label:hover :last-child,
 .coeur-checkbox:checked + .coeur-label :last-child {
   display: block;
@@ -31,7 +224,7 @@
 .coeur-checkbox:checked + .coeur-label :first-child {
   display: none;
 }
-
+*/
 /*
 test remplissable du coeur
 
@@ -75,39 +268,4 @@ test remplissable du coeur
  animation-name: verre;
 }
 
-@keyframes verre {
- 0% {
-  --bg: linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, blue, blue);
- }
- 10% {
-   --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, blue, yellow);
- }
- 20% {
-    --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, yellow, yellow);
- }
- 30% {
-   --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, blue, yellow, yellow, yellow);
- }
- 40% {
-   --bg:  linear-gradient(blue, blue, blue, blue, blue, blue, yellow, yellow, yellow, yellow);
- }
- 50% {
-   --bg:  linear-gradient(blue, blue, blue, blue, blue, yellow, yellow, yellow, yellow, yellow);
- }
- 60% {
-   --bg:  linear-gradient(blue, blue, blue, blue, yellow, yellow, yellow, yellow, yellow, yellow);
- }
- 70% {
-   --bg:  linear-gradient(blue, blue, blue, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
- }
- 80% {
-   --bg:  linear-gradient(blue, blue, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
- }
- 90% {
-   --bg:  linear-gradient(blue, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
- }
- 100% {
-   --bg:  linear-gradient(yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
- }
-}
 */

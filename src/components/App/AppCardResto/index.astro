@@ -1,18 +1,16 @@
 ---
 import Coeur from '@components/Shared/Coeur/index.astro';
-/*
-import './index.scss'
-*/
-const { slug, title, place, image, nouveau } = Astro.props;
+
+const { slug, title, place, nouveau } = Astro.props;
 ---
 
 <a href={`./menu/${slug}/index.html`}>
  <div class="app-card-resto">
   
-  <div class={ "app-card-image card-image-" + slug }>
+  <div class={ `app-card-image card-image-${slug}` } >
    { nouveau && (<div class="nouveau">Nouveau</div>) }
   </div>
-  <div class="app-card-footer">
+  <footer class="app-card-footer">
 
    <article class="app-card-description">
     <h3 class="app-card-nom-plat">{title}</h3>
@@ -21,6 +19,6 @@ const { slug, title, place, image, nouveau } = Astro.props;
 
    <Coeur slug={slug} />
 
-  </div>
+  </footer>
  </div>
 </a>
