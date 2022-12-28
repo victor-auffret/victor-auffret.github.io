@@ -2,12 +2,10 @@
 const { slug } = Astro.props
 ---
 
-<div class="coeur-container center">
+<label class="coeur-label center" for={`coeur-${slug}`}>
  <input class="coeur-checkbox" type="checkbox" name={`coeur-${slug}`} id={`coeur-${slug}`} />
- <label class="coeur-label" for={`coeur-${slug}`}>
-  <!--
-   <i class="coeur coeur-vide fa-regular fa-heart"></i>
-  -->
-   <i class="coeur coeur-plein fa-solid fa-heart"></i>
- </label>
-</div>
+ <div class="coeur-container center">
+  <i class="coeur-back fa-regular fa-heart"></i>
+  <i class="coeur-icon coeur-plein fa-solid fa-heart"></i>
+ </div>
+</label>

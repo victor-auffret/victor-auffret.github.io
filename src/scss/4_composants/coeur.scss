@@ -1,271 +1,280 @@
-@keyframes verre {
+@keyframes remplir {
   0% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    );
+  }
+  5% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet)
     );
   }
   10% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--rose)
+    );
+  }
+  15% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--rose)
     );
   }
   20% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  25% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose)
     );
   }
   30% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  35% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   40% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  45% {
+    --bg: linear-gradient(
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   50% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   60% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   70% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   80% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   90% {
     --bg: linear-gradient(
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   100% {
     --bg: linear-gradient(
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
 }
 
-.coeur {
-  margin: 0.3rem;
-
-  &-container {
-    --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue
-    );
-
-    &:hover i {
-      animation-name: verre;
-    }
-  }
-
-  /*
-  &-vide {
-    color: #000;
-  }
-  */
-
-  &-plein {
-    color: rgb(194, 102, 219);
-    background-color: blue;
-    background: var(--bg, blue);
-
-    transition-duration: 1s;
-    transition-property: background;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-
-  &-checkbox {
-    display: none;
-  }
-
-  &-label {
-    font-size: 2.5rem;
-    cursor: pointer;
-  }
-  /*
-  &-label :last-child {
-    display: none;
-  }
-  */
-}
-/*
-.coeur-label:hover :last-child,
-.coeur-checkbox:checked + .coeur-label :last-child {
-  display: block;
+/** todo **/
+.coeur-label {
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
-.coeur-label:hover :first-child,
-.coeur-checkbox:checked + .coeur-label :first-child {
+.coeur-checkbox {
   display: none;
 }
-*/
-/*
-test remplissable du coeur
 
-.container {
- display: flex;
- align-items: center;
- justify-content: center;
- width: 150px;
- height: 150px;
- background-color: red;
- --bg: linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, blue, blue);
+.coeur-container {
+  --bg: linear-gradient(
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
 }
 
-.circle {
- display: inline-flex;
- align-items: center;
- justify-content: center;
- width: 50px;
- height: 50px;
- background-color: blue;
- color: grey;
- transition-duration: 1s;
- transition-property: background;
- animation-duration: 1s;
- animation-timing-function: linear;
- animation-fill-mode: forwards;
- 
- font-size: 2rem;
- 
- background: var(--bg);
+.coeur-icon {
+  margin: 0.3rem;
+  color: var(--rose);
+  background-color: transparent;
+  background: var(--bg, transparent);
 
+  transition-duration: 1s;
+  transition-property: all;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 
- -webkit-background-clip: text;
- -moz-background-clip: text;
- -webkit-text-fill-color: transparent; 
- -moz-text-fill-color: transparent;
- 
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+  -webkit-text-stroke: 2px #fff;
 }
 
-.container:hover .circle {
- animation-name: verre;
+.coeur-label:hover .coeur-icon {
+  animation-name: remplir;
 }
 
-*/
+/**
+TODO : mettre .coeur-back en arrière plan 
+le recouvrir par coeur-icon 
+**/

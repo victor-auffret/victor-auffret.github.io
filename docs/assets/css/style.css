@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 html,
 body,
@@ -353,362 +354,494 @@ body {
           filter: brightness(1.1);
 }
 
-@-webkit-keyframes verre {
+@-webkit-keyframes remplir {
   0% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    );
+  }
+  5% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet)
     );
   }
   10% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--rose)
+    );
+  }
+  15% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--rose)
     );
   }
   20% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  25% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose)
     );
   }
   30% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  35% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   40% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  45% {
+    --bg: linear-gradient(
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   50% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   60% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   70% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   80% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   90% {
     --bg: linear-gradient(
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   100% {
     --bg: linear-gradient(
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
 }
 
-@keyframes verre {
+@keyframes remplir {
   0% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    );
+  }
+  5% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet)
     );
   }
   10% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--rose)
+    );
+  }
+  15% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--rose)
     );
   }
   20% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  25% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose)
     );
   }
   30% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  35% {
+    --bg: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   40% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      transparent,
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
+    );
+  }
+  45% {
+    --bg: linear-gradient(
+      transparent,
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   50% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   60% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   70% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   80% {
     --bg: linear-gradient(
-      blue,
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   90% {
     --bg: linear-gradient(
-      blue,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--violet),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
   100% {
     --bg: linear-gradient(
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow,
-      yellow
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose),
+      var(--rose)
     );
   }
 }
 
-.coeur {
-  margin: 0.3rem;
-  /*
-  &-vide {
-    color: #000;
-  }
-  */
-  /*
-  &-label :last-child {
-    display: none;
-  }
-  */
+/** todo **/
+.coeur-label {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.coeur-checkbox {
+  display: none;
 }
 
 .coeur-container {
   --bg: linear-gradient(
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue,
-      blue
-    );
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
 }
 
-.coeur-container:hover i {
-  -webkit-animation-name: verre;
-          animation-name: verre;
-}
-
-.coeur-plein {
-  color: #c266db;
-  background-color: blue;
-  background: var(--bg, blue);
+.coeur-icon {
+  margin: 0.3rem;
+  color: var(--rose);
+  background-color: transparent;
+  background: var(--bg, transparent);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
-  -webkit-transition-property: background;
-  transition-property: background;
+  -webkit-transition-property: all;
+  transition-property: all;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: linear;
@@ -719,72 +852,18 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #fff;
 }
 
-.coeur-checkbox {
-  display: none;
+.coeur-label:hover .coeur-icon {
+  -webkit-animation-name: remplir;
+          animation-name: remplir;
 }
 
-.coeur-label {
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-
-/*
-.coeur-label:hover :last-child,
-.coeur-checkbox:checked + .coeur-label :last-child {
-  display: block;
-}
-
-.coeur-label:hover :first-child,
-.coeur-checkbox:checked + .coeur-label :first-child {
-  display: none;
-}
-*/
-/*
-test remplissable du coeur
-
-.container {
- display: flex;
- align-items: center;
- justify-content: center;
- width: 150px;
- height: 150px;
- background-color: red;
- --bg: linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, blue, blue);
-}
-
-.circle {
- display: inline-flex;
- align-items: center;
- justify-content: center;
- width: 50px;
- height: 50px;
- background-color: blue;
- color: grey;
- transition-duration: 1s;
- transition-property: background;
- animation-duration: 1s;
- animation-timing-function: linear;
- animation-fill-mode: forwards;
- 
- font-size: 2rem;
- 
- background: var(--bg);
-
-
- -webkit-background-clip: text;
- -moz-background-clip: text;
- -webkit-text-fill-color: transparent; 
- -moz-text-fill-color: transparent;
- 
-}
-
-.container:hover .circle {
- animation-name: verre;
-}
-
-*/
+/**
+TODO : mettre .coeur-back en arrière plan 
+le recouvrir par coeur-icon 
+**/
 .app-resto {
   background-color: var(--light-gris);
 }
