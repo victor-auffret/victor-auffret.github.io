@@ -16,6 +16,14 @@
     grid-template-rows: 1fr;
   }
 
+  .fonctionnement-item {
+    max-width: 29vw;
+  }
+
+  .fonctionnement-item-content {
+    width: 20vw;
+  }
+
   .app-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
