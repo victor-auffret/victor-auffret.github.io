@@ -29,6 +29,11 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .nouveau {
+    width: 40%;
+    font-size: clamp(16px, 3.125vw, 3rem);
+  }
+
   .menu-list {
     padding: 0 clamp(1rem, 5vw, 120px);
   }
