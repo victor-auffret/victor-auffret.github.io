@@ -1037,11 +1037,10 @@ le recouvrir par coeur-icon
 
 .app-card-resto {
   width: 100%;
+  height: auto;
   border: solid 1px #000;
   border-radius: 1.25rem;
-  /*
   aspect-ratio: 69 / 52;
-  */
 }
 
 .app-card-image {
@@ -1055,9 +1054,8 @@ le recouvrir par coeur-icon
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  max-height: 70%;
-  min-height: 100px;
   width: 100%;
+  height: clamp(100px, 80%, 40vh);
   padding: 1.5rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -1105,14 +1103,16 @@ le recouvrir par coeur-icon
 .app-card-footer {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  background-color: #fff;
   min-height: 100px;
-  /*
-  height: 30%;*/
+  height: 100%;
+  max-height: 150px;
+  padding: 1rem;
   border-bottom-left-radius: 1.25rem;
   border-bottom-right-radius: 1.25rem;
-  padding: 1rem;
+  background-color: #fff;
   color: #000;
+  /*
+  aspect-ratio: ;*/
 }
 
 .app-card-description {
