@@ -227,8 +227,12 @@
 
 /** todo **/
 .coeur-label {
+  @include centrer();
   font-size: 2.5rem;
   cursor: pointer;
+  /*
+  background-color: blue;
+  */
 }
 
 .coeur-checkbox {
@@ -236,6 +240,9 @@
 }
 
 .coeur-container {
+  @include centrer();
+  @include couche-container();
+
   --bg: linear-gradient(
     transparent,
     transparent,
@@ -248,9 +255,26 @@
     transparent,
     transparent
   );
+  /*
+  background-color: red;*/
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.coeur-back {
+  @include couche-back();
+  @include centrer();
+}
+
+.coeur-front {
+  @include couche-front();
+  @include centrer();
 }
 
 .coeur-icon {
+  color: transparent;
+
   margin: 0.3rem;
   color: var(--rose);
   background-color: transparent;
@@ -270,7 +294,8 @@
   -webkit-text-stroke: 2px #fff;
 }
 
-.coeur-label:hover .coeur-icon {
+.coeur-label:hover .coeur-icon,
+.coeur-checkbox:checked ~ .coeur-container .coeur-icon {
   animation-name: remplir;
 }
 

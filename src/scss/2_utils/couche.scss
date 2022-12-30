@@ -1,0 +1,21 @@
+@mixin couche-container() {
+  position: relative;
+}
+
+@mixin couche-item() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin couche-back() {
+  @include couche-item();
+  z-index: 10;
+}
+
+@mixin couche-front() {
+  @include couche-item();
+  z-index: 20;
+}
