@@ -13,6 +13,7 @@
   .fonctionnement-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   .app-card-container {
@@ -20,10 +21,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  /*
   .menu-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 0 clamp(1rem, 5vw, 120px);
   }
-  */
 }

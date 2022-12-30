@@ -1,0 +1,79 @@
+.app-fonctionnement {
+  display: flex;
+
+  flex-direction: column;
+  background-color: #fff;
+
+  padding: 3rem;
+}
+
+.fonctionnement-title {
+  font-family: var(--text-font);
+  padding: 1rem;
+}
+
+.fonctionnement-list {
+  counter-reset: my-awesome-counter;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.fonctionnement-item {
+  --item-icon-color: #000;
+  --item-bg-color: var(--light-gris);
+
+  display: flex;
+
+  padding: 1rem;
+
+  border: solid 1px black;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--item-bg-color);
+
+  font-weight: 600;
+  counter-increment: my-awesome-counter;
+}
+
+.fonctionnement-item::before {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  right: 1.75rem;
+
+  content: counter(my-awesome-counter);
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  background-color: var(--violet);
+  color: #fff;
+
+  font-weight: bold;
+}
+
+.fonctionnement-icon {
+  display: inline-flex;
+  font-size: 1.5rem;
+  color: var(--item-icon-color);
+  margin-right: 1rem;
+}
+
+.fontionnement-item-content {
+  display: inline-flex;
+  max-width: 70vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fonctionnement-item:hover {
+  --item-icon-color: var(--violet);
+  --item-bg-color: rgb(245, 237, 255);
+}

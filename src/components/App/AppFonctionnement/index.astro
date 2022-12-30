@@ -1,18 +1,28 @@
 ---
-import AppFonctionnementItem from '@components/App/AppFonctionnementItem/index.astro';
-
 const mobile = "fa fa-mobile"
 const liste = "fa-solid fa-list"
 const store = "fa-sharp fa-solid fa-store"
+const items = [
+  { icon: mobile, text: "Choisissez un restaurant" },
+  { icon: liste, text: "Composez votre menu" },
+  { icon: store, text: "Dégustez au restaurant" }
+]
 ---
 
 <section class="app-fonctionnement">
   <h2 class="fonctionnement-title">Fonctionnement</h2>
   <div>
     <ol class="fonctionnement-list">
-      <AppFonctionnementItem icon={mobile}>Choisissez un restaurant</AppFonctionnementItem>
-      <AppFonctionnementItem icon={liste}>Composez votre menu</AppFonctionnementItem>
-      <AppFonctionnementItem icon={store}>Dégustez au restaurant</AppFonctionnementItem>
+      {
+        items.map(({icon, text}) => {
+          return (
+            <li class="fonctionnement-item">
+              <i class={`fonctionnement-icon ${icon}`} aria-hidden="true"></i>
+              <span class="fontionnement-item-content">{text}</span>
+            </li>
+          )
+        })
+      }
     </ol>
   </div>
 </section>
