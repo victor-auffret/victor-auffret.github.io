@@ -4,9 +4,6 @@
 
 .menu-carte {
   display: flex;
-  /*
-align-items: center;
-*/
   flex-direction: column;
 
   width: 100%;
@@ -29,8 +26,6 @@ align-items: center;
   min-height: 300px;
 
   margin-bottom: -2rem;
-
-  background-color: red;
 
   background-position: center;
   background-repeat: no-repeat;
