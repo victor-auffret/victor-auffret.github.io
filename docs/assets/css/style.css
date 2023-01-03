@@ -1369,32 +1369,6 @@ le recouvrir par coeur-icon
           transition-timing-function: ease-in-out;
 }
 
-/*
-.rideau {
-  width: 0;
-  background-color: transparent;
-  height: 100%;
-
-  transition-duration: 0.5s;
-}
-
-.menu-card:hover .rideau,
-.menu-hidden-checkbox:checked ~ .menu-card-front .rideau {
-  width: 140px;
-  aspect-ratio: 1 / 1;
-}
-*/
-.menu-card:hover .menu-card-content,
-.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
-  margin-right: 140px;
-}
-
-.menu-card:hover .menu-card-content,
-.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 .menu-card-intitule {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1406,15 +1380,21 @@ le recouvrir par coeur-icon
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-card-intitule-txt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1426,15 +1406,20 @@ le recouvrir par coeur-icon
       -ms-flex-align: end;
           align-items: flex-end;
   width: 50px;
+  min-width: 35px;
   height: 100%;
 }
 
-.menu-card-intitule p {
-  /*
-  width: 200px;*/
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.menu-card:hover .menu-card-content,
+.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
+  width: calc(100% - 150px);
+  margin-right: 140px;
+}
+
+.menu-card:hover .menu-card-content,
+.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .menu-nom {

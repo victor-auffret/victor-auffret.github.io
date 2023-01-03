@@ -88,6 +88,7 @@
 .menu-card-front {
   display: flex;
   justify-content: space-between;
+
   width: 100%;
   height: 100%;
   max-height: 140px;
@@ -109,32 +110,6 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
-/*
-.rideau {
-  width: 0;
-  background-color: transparent;
-  height: 100%;
-
-  transition-duration: 0.5s;
-}
-
-.menu-card:hover .rideau,
-.menu-hidden-checkbox:checked ~ .menu-card-front .rideau {
-  width: 140px;
-  aspect-ratio: 1 / 1;
-}
-*/
-
-.menu-card:hover .menu-card-content,
-.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
-  margin-right: 140px;
-}
-
-.menu-card:hover .menu-card-content,
-.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
 
 .menu-card-intitule {
   display: flex;
@@ -142,23 +117,35 @@
   flex-direction: column;
 
   height: 100%;
-  width: fit-content;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+}
+
+.menu-card-intitule-txt {
+  @include trois-point();
 }
 
 .prix {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 
   width: 50px;
+  min-width: 35px;
   height: 100%;
 }
 
-.menu-card-intitule p {
-  /*
-  width: 200px;*/
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.menu-card:hover .menu-card-content,
+.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
+  width: calc(100% - 150px);
+  margin-right: 140px;
+}
+
+.menu-card:hover .menu-card-content,
+.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }

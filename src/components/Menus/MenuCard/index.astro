@@ -14,8 +14,8 @@ const { nom, infos, prix } = Astro.props
    <div class="menu-card-content">
 
     <article class="menu-card-intitule">
-     <h3>{nom}</h3>
-     <p>{infos}</p>
+     <h3 class="menu-card-intitule-txt">{nom}</h3>
+     <p class="menu-card-intitule-txt">{infos}</p>
     </article>
     
     <aside class="prix">
@@ -23,10 +23,6 @@ const { nom, infos, prix } = Astro.props
     </aside>
 
    </div>
-
-   <!--
-    <div class="rideau"></div>
-   -->
    
   </div>
   <!-- fin menu-card-front -->

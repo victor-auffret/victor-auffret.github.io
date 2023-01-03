@@ -68,9 +68,7 @@
 .fontionnement-item-content {
   display: inline-flex;
   max-width: 70vw;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  @include trois-point();
 }
 
 .fonctionnement-item:hover {
