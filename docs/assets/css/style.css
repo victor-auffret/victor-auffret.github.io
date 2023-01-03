@@ -1369,18 +1369,24 @@ le recouvrir par coeur-icon
           transition-timing-function: ease-in-out;
 }
 
+/*
 .rideau {
   width: 0;
   background-color: transparent;
   height: 100%;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+
+  transition-duration: 0.5s;
 }
 
 .menu-card:hover .rideau,
 .menu-hidden-checkbox:checked ~ .menu-card-front .rideau {
   width: 140px;
   aspect-ratio: 1 / 1;
+}
+*/
+.menu-card:hover .menu-card-content,
+.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
+  margin-right: 140px;
 }
 
 .menu-card:hover .menu-card-content,
@@ -1425,9 +1431,8 @@ le recouvrir par coeur-icon
 
 .menu-card-intitule p {
   /*
- width: 200px;
- white-space: nowrap;
- */
+  width: 200px;*/
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1531,9 +1536,6 @@ le recouvrir par coeur-icon
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*
-align-items: center;
-*/
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1553,7 +1555,6 @@ align-items: center;
   height: 520px;
   min-height: 300px;
   margin-bottom: -2rem;
-  background-color: red;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1624,7 +1625,7 @@ align-items: center;
   }
   .nouveau {
     width: 40%;
-    font-size: clamp(16px, 3.125vw, 3rem);
+    font-size: clamp(16px, 3.125vw, 2.75rem);
   }
   .menu-list {
     padding: 0 clamp(1rem, 5vw, 120px);

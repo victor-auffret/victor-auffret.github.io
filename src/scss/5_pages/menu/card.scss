@@ -109,7 +109,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
-
+/*
 .rideau {
   width: 0;
   background-color: transparent;
@@ -122,6 +122,12 @@
 .menu-hidden-checkbox:checked ~ .menu-card-front .rideau {
   width: 140px;
   aspect-ratio: 1 / 1;
+}
+*/
+
+.menu-card:hover .menu-card-content,
+.menu-hidden-checkbox:checked ~ .menu-card-front .menu-card-content {
+  margin-right: 140px;
 }
 
 .menu-card:hover .menu-card-content,
@@ -151,9 +157,8 @@
 
 .menu-card-intitule p {
   /*
- width: 200px;
- white-space: nowrap;
- */
+  width: 200px;*/
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
