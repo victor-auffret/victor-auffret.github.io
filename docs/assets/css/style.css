@@ -339,6 +339,10 @@ body {
   text-align: center;
 }
 
+.btn * {
+  color: #fff;
+}
+
 .btn-rounded {
   border-radius: 2rem;
 }
