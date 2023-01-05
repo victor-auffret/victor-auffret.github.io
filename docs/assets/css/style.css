@@ -356,455 +356,135 @@ body {
 
 @-webkit-keyframes remplir {
   0% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
   }
   5% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(var(--violet)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--violet));
   }
   10% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--violet), var(--rose));
   }
   15% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--rose));
   }
   20% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--rose), var(--rose));
   }
   25% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--violet), var(--rose), var(--rose));
   }
   30% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose));
   }
   35% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose));
   }
   40% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   45% {
-    --bg: linear-gradient(
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, var(--violet), var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   50% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   60% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   70% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   80% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   90% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   100% {
-    --bg: linear-gradient(
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
 }
 
 @keyframes remplir {
   0% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
   }
   5% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(var(--violet)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--violet));
   }
   10% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--violet), var(--rose));
   }
   15% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--rose));
   }
   20% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--rose), var(--rose));
   }
   25% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--violet), var(--rose), var(--rose));
   }
   30% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose));
   }
   35% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, transparent, var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose));
   }
   40% {
-    --bg: linear-gradient(
-      transparent,
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, transparent, var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   45% {
-    --bg: linear-gradient(
-      transparent,
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(transparent, var(--violet), var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   50% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   60% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   70% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   80% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   90% {
-    --bg: linear-gradient(
-      var(--violet),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--violet)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--violet), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
   100% {
-    --bg: linear-gradient(
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose),
-      var(--rose)
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), color-stop(var(--rose)), to(var(--rose)));
+    background-image: linear-gradient(var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose), var(--rose));
   }
 }
 
@@ -841,20 +521,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  --bg: linear-gradient(
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent
-  );
-  /*
-  background-color: red;*/
   width: 100%;
   height: 100%;
   font-size: 3rem;
@@ -901,7 +567,6 @@ body {
   margin: 0.3rem;
   color: var(--rose);
   background-color: transparent;
-  background: var(--bg, transparent);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transition-property: all;

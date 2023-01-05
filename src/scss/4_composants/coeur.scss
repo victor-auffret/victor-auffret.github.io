@@ -1,6 +1,6 @@
 @keyframes remplir {
   0% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -14,7 +14,7 @@
     );
   }
   5% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -28,7 +28,7 @@
     );
   }
   10% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -42,7 +42,7 @@
     );
   }
   15% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -56,7 +56,7 @@
     );
   }
   20% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -70,7 +70,7 @@
     );
   }
   25% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -84,7 +84,7 @@
     );
   }
   30% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -98,7 +98,7 @@
     );
   }
   35% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       transparent,
@@ -112,7 +112,7 @@
     );
   }
   40% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       transparent,
       var(--violet),
@@ -126,7 +126,7 @@
     );
   }
   45% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       transparent,
       var(--violet),
       var(--violet),
@@ -140,7 +140,7 @@
     );
   }
   50% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       var(--violet),
       var(--violet),
       var(--violet),
@@ -154,7 +154,7 @@
     );
   }
   60% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       var(--violet),
       var(--violet),
       var(--violet),
@@ -168,7 +168,7 @@
     );
   }
   70% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       var(--violet),
       var(--violet),
       var(--violet),
@@ -182,7 +182,7 @@
     );
   }
   80% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       var(--violet),
       var(--violet),
       var(--rose),
@@ -196,7 +196,7 @@
     );
   }
   90% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       var(--violet),
       var(--rose),
       var(--rose),
@@ -210,7 +210,7 @@
     );
   }
   100% {
-    --bg: linear-gradient(
+    background-image: linear-gradient(
       var(--rose),
       var(--rose),
       var(--rose),
@@ -242,21 +242,6 @@
 .coeur-container {
   @include centrer();
   @include couche-container();
-
-  --bg: linear-gradient(
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent
-  );
-  /*
-  background-color: red;*/
   width: 100%;
   height: 100%;
   font-size: 3rem;
@@ -278,7 +263,6 @@
   margin: 0.3rem;
   color: var(--rose);
   background-color: transparent;
-  background: var(--bg, transparent);
 
   transition-duration: 1s;
   transition-property: all;

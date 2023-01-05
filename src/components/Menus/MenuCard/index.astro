@@ -4,7 +4,7 @@ const nom_cut = nom.replaceAll(" ", "-")
 ---
 
 <!-- menu-card -->
-<label for={`menu-${nom_cut}`}>
+
  <div class="menu-card">
 
   <input class="menu-hidden-checkbox" type="checkbox" name={`menu-${nom_cut}`} id={`menu-${nom_cut}`} />
@@ -34,7 +34,9 @@ const nom_cut = nom.replaceAll(" ", "-")
    <!-- menu-card-back-box -->
    <div class="menu-card-back-box">
     <div class="cercle">
-     <span class="icon"><i class="fa-solid fa-check"></i></span>
+     <label for={`menu-${nom_cut}`}>
+      <span class="icon"><i class="fa-solid fa-check"></i></span>
+     </label>
     </div>
    </div>
    <!-- fin menu-card-back-box -->
@@ -44,4 +46,4 @@ const nom_cut = nom.replaceAll(" ", "-")
 
  </div>
  <!-- fin menu-card -->
-</label>
+
