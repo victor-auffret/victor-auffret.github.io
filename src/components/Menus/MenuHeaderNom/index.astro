@@ -1,13 +1,13 @@
 ---
 import Coeur from '@components/Shared/Coeur/index.astro';
 
-const {nom} = Astro.props
+const {nom, slug} = Astro.props
 ---
 
 <header class="menu-nom">
 
  <h2 class="nom-resto">{ nom }</h2>
  
- <Coeur slug={nom} />
+ <Coeur slug={`resto-${slug}`} />
 
 </header>

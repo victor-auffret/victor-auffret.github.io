@@ -1,12 +1,13 @@
 ---
 const { nom, infos, prix } = Astro.props
+const nom_cut = nom.replaceAll(" ", "-")
 ---
 
 <!-- menu-card -->
-<label for={`menu-${nom}`}>
+<label for={`menu-${nom_cut}`}>
  <div class="menu-card">
 
-  <input class="menu-hidden-checkbox" type="checkbox" name={`menu-${nom}`} id={`menu-${nom}`} />
+  <input class="menu-hidden-checkbox" type="checkbox" name={`menu-${nom_cut}`} id={`menu-${nom_cut}`} />
   
   <!-- menu-card-front -->
   <div class="menu-card-front">
