@@ -286,15 +286,17 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 
   -webkit-text-stroke: 2px #fff;
 }
 
-.coeur-label:hover .coeur-icon,
+.coeur-container:hover .coeur-icon,
 .coeur-checkbox:checked ~ .coeur-container .coeur-icon {
   animation-name: remplir;
 }
