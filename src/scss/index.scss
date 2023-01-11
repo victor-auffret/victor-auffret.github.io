@@ -8,6 +8,10 @@
 @import "./6_themes/index";
 @import "./7_vendors/index";
 
+.txt-white {
+  color: #fff !important;
+}
+
 @media screen and (min-width: 769px) {
   /** page principale **/
   .fonctionnement-list {

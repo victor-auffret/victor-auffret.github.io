@@ -21,10 +21,6 @@
   text-align: center;
 }
 
-.btn * {
-  color: #fff;
-}
-
 .btn-rounded {
   border-radius: 2rem;
 }
@@ -32,6 +28,10 @@
 .btn-pink {
   color: #fff;
   background: linear-gradient(var(--rose), var(--violet));
+}
+
+.btn > * {
+  color: #fff;
 }
 
 .btn:hover {
