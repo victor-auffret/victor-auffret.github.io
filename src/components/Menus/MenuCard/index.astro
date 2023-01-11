@@ -12,21 +12,19 @@ const nom_cut = nom.replaceAll(" ", "-")
   <!-- menu-card-front -->
   <div class="menu-card-front">
 
-   <div class="menu-card-content">
-
-    <article class="menu-card-intitule">
-     <h3 class="menu-card-intitule-txt">{nom}</h3>
-     <p class="menu-card-intitule-txt">{infos}</p>
-    </article>
-    
-    <aside class="prix">
-     <data value={prix}>{prix} €</data>
-    </aside>
-
-   </div>
+   <article class="menu-card-content">
+    <h3 class="menu-card-content-txt">{nom}</h3>
+    <p class="menu-card-content-txt">{infos}</p>
+   </article>
    
+   <div class="prix">
+    <data value={prix}>{prix} €</data>
+   </div>
+ 
   </div>
   <!-- fin menu-card-front -->
+
+  <label class="menu-label" for={`menu-${nom_cut}`}></label>
   
   <!-- menu-card-back -->
   <div class="menu-card-back">
@@ -34,9 +32,7 @@ const nom_cut = nom.replaceAll(" ", "-")
    <!-- menu-card-back-box -->
    <div class="menu-card-back-box">
     <div class="cercle">
-     <label for={`menu-${nom_cut}`}>
-      <span class="icon"><i class="fa-solid fa-check"></i></span>
-     </label>
+     <span class="icon"><i class="fa-solid fa-check"></i></span>
     </div>
    </div>
    <!-- fin menu-card-back-box -->
