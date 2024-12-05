@@ -4,7 +4,7 @@ dist/
 .vscode/
 vscode/
 astro/
-docs/
+
 
 # generated types
 .astro/
