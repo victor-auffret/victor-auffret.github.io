@@ -1,15 +1,15 @@
 ---
 import { Image } from 'astro:assets';
-import astroLogo from '@assets/astro.svg';
-import background from '@assets/background.svg';
+//import astroLogo from '@assets/astro.svg';
+//import background from '@assets/background.svg';
 ---
 
 <div id="container">
-	<Image id="background" src={background} alt="" fetchpriority="high" />
+	<img id="background" src={"assets/background.svg"} alt="" fetchpriority="high" />
 	<main>
 		<section id="hero">
 			<a href="https://astro.build">
-				<Image src={astroLogo} width="115" height="48" alt="Astro Homepage" />
+				<img src={"assets/astro.svg"} width="115" height="48" alt="Astro Homepage" />
 			</a>
 			<h1>
 				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
