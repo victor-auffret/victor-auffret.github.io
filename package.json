@@ -1,38 +1,18 @@
 {
-  "name": "victor-auffret.github.io",
-  "version": "0.0.1",
-  "description": "mon site git pages",
+  "name": "victor-auffret-github-io",
   "type": "module",
-  "engines": {
-    "node": ">=20"
-  },
+  "version": "0.0.1",
   "scripts": {
-    "dev": "npm run watch",
-    "watch": "astro dev",
+    "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "list-browser": "npx browserslist"
+    "astro": "astro"
   },
-  "browserslist": [
-    "defaults",
-    "last 2 versions"
-  ],
   "devDependencies": {
-    "astro": "^4.2.2"
+    "typescript": "^5.7.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/victor-auffret/victor-auffret.github.io.git"
-  },
-  "author": "victor-auffret",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/victor-auffret/victor-auffret.github.io/issues"
-  },
-  "homepage": "https://github.com/victor-auffret/victor-auffret.github.io#readme",
   "dependencies": {
-    "@astrojs/solid-js": "^4.0.1",
-    "solid-js": "^1.8.15"
+    "astro": "^5.0.2",
+    "solid-js": "^1.9.3"
   }
 }
