@@ -8,7 +8,8 @@ import Compress from "astro-compress";
 export default defineConfig({
   prefetch: true,
   site: "https://victor-auffret.github.io/",
-  base: "/",
+  //base: "/",
+  base: '/docs/',
   i18n: {
     defaultLocale: "fr",
     locales: ["fr"],
@@ -24,6 +25,9 @@ export default defineConfig({
       JavaScript: true
     })
   ],
+  image: {
+    domains: ["astro.build"],
+  },
   minify: true,
   outDir: "docs",
   output: "static"
