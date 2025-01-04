@@ -1,18 +1,19 @@
 ---
 import "./style.css";
-import { ClientRouter } from 'astro:transitions';
+import MetaList from "@components/astro/metalist/Index.astro"
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+	title = "Pas de titre", 
+  description = "description manquante"
+} = Astro.props
 ---
 <!doctype html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="mon site gitpage">
-		<title>Astro</title>
-		<ClientRouter />
-	</head>
+	<MetaList title={title} description={description} >
+	</MetaList>
 	<body>
 		<slot />
 	</body>
