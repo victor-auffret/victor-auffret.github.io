@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '@layouts/Layout.astro';
+
+const posts = (await getCollection("astuces"))?.sort(
+  (blogEntryA: { data: { publishDate: any; }; }, blogEntryB: { data: { publishDate: any; }; }) =>
+    (blogEntryB.data.publishDate || new Date()).getTime() -
+    (blogEntryA.data.publishDate || new Date()).getTime()
+);
+---
+
+<Layout title="Astuces">
+  <main>
+    <a href="/">Back</a>
+    <h1>Posts</h1>
+    <article>
+      {
+        posts?.map((post: any) => (
+          <pre>
+            <code>
+              {JSON.stringify(post, null, 2)}
+            </code>
+          </pre>
+        ))
+      }
+    </article>
+  </main>
+</Layout>

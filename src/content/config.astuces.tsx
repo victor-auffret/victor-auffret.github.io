@@ -5,6 +5,7 @@ const astuces = defineCollection({
   loader: glob({ base: './src/content/astuces', pattern: '**/*.{md,mdx}' }),
   schema: ({ image }) =>
     z.object({
+      slug: z.string().max(30),
       title: z.string().max(60),
       description: z.string().max(160),
       publishDate: z.coerce.date(),

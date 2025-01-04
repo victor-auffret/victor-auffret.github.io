@@ -1,0 +1,53 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/astro/navbar/Index.astro'
+import { getCollection, getEntry } from "astro:content";
+
+//export const prerender = true;
+
+export async function getStaticPaths() {
+  const coll = (await getCollection("astuces"))
+  .map(({ id }: { id: string }) => ({
+    params: { id: id as string },
+  }));
+  console.log("COLL : ", coll)
+  return coll
+}
+
+const astuces = await getCollection("astuces");
+console.log("astuces : ", astuces)
+
+const { id } = Astro.params;
+
+if (!id) {
+  throw new Error("id is missing");
+}
+console.log("id : ", id)
+const entry = astuces.find((e: any) => e.id == id)
+//const entry = await getEntry("astuces", "astuces/git.mdx");
+//console.log("astuces dfdf ", astuces)
+/*
+if (!entry) {
+  return Astro.redirect("/404");
+}
+*/
+console.log("headings eererer", entry, id);
+
+---
+
+<Layout title="page astuces">
+	<Navbar />
+  <br/><br/>
+	<main>
+    <div>
+      <h2>astuces</h2>
+      <hr/>
+
+      <ul>
+        <li>css</li>
+        <li>git</li>
+        <li>html</li>
+      </ul>
+    </div>
+  </main>
+</Layout>
