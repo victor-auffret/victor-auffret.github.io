@@ -1,37 +1,34 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/astro/navbar/Index.astro'
-import { getCollection, getEntry } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
+import type { CollectionEntry } from 'astro:content';
 
 //export const prerender = true;
 
-export async function getStaticPaths() {
-  const coll = (await getCollection("astuces"))
-  .map(({ id }: { id: string }) => ({
-    params: { id: id as string },
-  }));
-  console.log("COLL : ", coll)
-  return coll
+interface Props {
+  astuces: CollectionEntry<'astuces'>;
 }
 
-const astuces = await getCollection("astuces");
-console.log("astuces : ", astuces)
+export async function getStaticPaths() {
+  const astuces = (await getCollection("astuces"))
+  .map((astuce) => ({
+    params: { id: astuce.id },
+    props: astuce,
+  }));
+  console.log("COLL : ", astuces)
+  return astuces
+}
 
 const { id } = Astro.params;
-
 if (!id) {
-  throw new Error("id is missing");
-}
-console.log("id : ", id)
-const entry = astuces.find((e: any) => e.id == id)
-//const entry = await getEntry("astuces", "astuces/git.mdx");
-//console.log("astuces dfdf ", astuces)
-/*
-if (!entry) {
   return Astro.redirect("/404");
 }
-*/
-console.log("headings eererer", entry, id);
+const astuce = await getEntry("astuces", id);
+if (!astuce) {
+  return Astro.redirect("/404");
+}
+const { Content } = await render(astuce);
 
 ---
 
@@ -48,6 +45,9 @@ console.log("headings eererer", entry, id);
         <li>git</li>
         <li>html</li>
       </ul>
+    </div>
+    <div>
+      <Content/>
     </div>
   </main>
 </Layout>

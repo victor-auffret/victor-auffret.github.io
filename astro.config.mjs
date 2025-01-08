@@ -22,7 +22,9 @@ export default defineConfig({
     solid({
       include: ["**/solid/*"],
     }),
-    mdx(),
+    mdx({
+      optimize: PROD
+    }),
     sitemap(),
     Compress({
       JavaScript: true

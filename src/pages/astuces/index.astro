@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from '@layouts/Layout.astro';
 
-const posts = (await getCollection("astuces"))?.sort(
+const astuces = (await getCollection("astuces"))?.sort(
   (blogEntryA: { data: { publishDate: any; }; }, blogEntryB: { data: { publishDate: any; }; }) =>
     (blogEntryB.data.publishDate || new Date()).getTime() -
     (blogEntryA.data.publishDate || new Date()).getTime()
@@ -12,17 +12,20 @@ const posts = (await getCollection("astuces"))?.sort(
 <Layout title="Astuces">
   <main>
     <a href="/">Back</a>
-    <h1>Posts</h1>
+    <h1>Astuces</h1>
     <article>
+      <ul>
       {
-        posts?.map((post: any) => (
-          <pre>
-            <code>
-              {JSON.stringify(post, null, 2)}
-            </code>
-          </pre>
+        astuces?.map((astuce: any) => (
+          <li>
+            <a href={`/astuces/${astuce.id}`}>
+              {astuce?.data?.title}
+            </a>
+          </li>
         ))
-      }
+      }  
+      </ul>
+      
     </article>
   </main>
 </Layout>
