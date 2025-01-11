@@ -2,14 +2,71 @@
 title: "Astuces GIT Cheat Sheet"
 description: "mon premier article sur git, les commandes de base"
 publishDate: 2025-01-01
+tags: ["git"]
 ---
 
-# {frontmatter.title} / {(new Date(frontmatter.publishDate)).toLocaleString()}
+<div>
+  <h2>{frontmatter.title}</h2>
+  <hr/>
+  <section>
+    <h3>{frontmatter.description} - {(new Date(frontmatter.publishDate)).toLocaleString()} </h3>
+    <hr/>
 
-## {frontmatter.description}
+    <article> 
+      <h4>Installation</h4>
+      
+      <p>
+        <a href="https://git-scm.com/downloads/win">windows</a>
+      </p>
 
-<div> 
-  <p>
-    petit <span>test</span>
-  </p>
+      <p>
+        Debian/Ubuntu
+        <pre>
+          <code>
+            apt-get install git
+          </code>
+        </pre>
+        <br/>
+        Arch Linux
+        <pre>
+          <code>
+             pacman -S git
+          </code>
+        </pre>
+      </p>
+    </article>
+
+    <article>
+      <h4>Commandes de base</h4>
+
+      <table>
+        <thead>
+          <tr>
+            <th>commande</th>
+            <th>description</th>
+            <th>formulaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>git status</code></td>
+            <td>Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</td>
+            <td>formulaire</td>
+          </tr>
+          <tr>
+            <td>commande</td>
+            <td>description</td>
+            <td>formulaire</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>commande</td>
+            <td>description</td>
+            <td>formulaire</td>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+  </section>
 </div>
